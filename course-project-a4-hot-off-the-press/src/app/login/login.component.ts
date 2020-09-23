@@ -12,4 +12,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loginUser(event) {
+    //checking of event is triggered when submitting user and password fields
+    event.preventDefault()
+    console.log(event)
+  }
+
 }
