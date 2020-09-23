@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ALBUMS } from '../../../testData'
 
 @Component({
@@ -7,7 +7,7 @@ import { ALBUMS } from '../../../testData'
   styleUrls: ['./album-list.component.scss']
 })
 export class AlbumListComponent implements OnInit {
-  title:string = "New Releases";
+  @Input() title: string;
   albums = ALBUMS;
 
   constructor() { }

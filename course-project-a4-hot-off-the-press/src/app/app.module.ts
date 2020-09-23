@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
+import { AlbumListComponent } from './components/album-list/album-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumCardComponent
+    AlbumCardComponent,
+    AlbumListComponent
   ],
   imports: [
     BrowserModule,
