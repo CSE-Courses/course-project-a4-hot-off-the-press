@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
 
 @Component({
@@ -7,16 +7,10 @@ import { Album } from 'src/app/models/album';
   styleUrls: ['./album-card.component.scss']
 })
 export class AlbumCardComponent implements OnInit {
-  album: Album;
+  @Input() album: Album;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.getAlbum();
   }
-
-  getAlbum(): void {
-    this.album = { title: "The Optimist", artist: "Cory Wong", image: "/assets/optimist.jpg" };
-  }
-
 }
