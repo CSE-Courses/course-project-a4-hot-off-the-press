@@ -7,8 +7,5 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
-
-  getUserDetails(username, password) {
-    //post details to server and return user info if correct
-  }
+  //contact data base in this service
 }
