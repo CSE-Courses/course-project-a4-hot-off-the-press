@@ -10,12 +10,19 @@ import { Album } from '../../../models/album'
 export class AlbumListComponent implements OnInit {
   /* listTitle - name of the list, albums - albums to be displayed */
   @Input() listTitle: string;
-  albums: Album[];
+  albums: Album[] = [];
 
   constructor(private albumListService:AlbumListService) { }
 
   ngOnInit(): void {
+    //this.showAlbums();
     this.albums = this.albumListService.getAlbums(this.listTitle);
   }
 
+  //TODO: Have this show JSON data from database server
+  /*
+  showAlbums() {
+    this.albumListService.getAlbums(this.listTitle).subscribe(data => this.albums = JSON.parse(JSON.stringify(data)));
+  }
+  */
 }
