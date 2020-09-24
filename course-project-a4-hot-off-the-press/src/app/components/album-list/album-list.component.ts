@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ALBUMS } from '../../../testData'
+import { AlbumListService } from '../../services/album-list.service'
+import { Album } from '../../models/album'
 
 @Component({
   selector: 'app-album-list',
@@ -7,12 +8,14 @@ import { ALBUMS } from '../../../testData'
   styleUrls: ['./album-list.component.scss']
 })
 export class AlbumListComponent implements OnInit {
-  @Input() title: string;
-  albums = ALBUMS;
+  /* listTitle - name of the list, albums - albums to be displayed */
+  @Input() listTitle: string;
+  albums: Album[];
 
-  constructor() { }
+  constructor(private albumListService:AlbumListService) { }
 
   ngOnInit(): void {
+    this.albums = this.albumListService.getAlbums(this.listTitle);
   }
 
 }

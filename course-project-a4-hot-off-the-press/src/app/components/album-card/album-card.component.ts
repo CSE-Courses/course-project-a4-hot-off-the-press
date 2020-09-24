@@ -7,6 +7,7 @@ import { Album } from 'src/app/models/album';
   styleUrls: ['./album-card.component.scss']
 })
 export class AlbumCardComponent implements OnInit {
+  /* Album to be displayed on card */
   @Input() album: Album;
 
   constructor() { }
