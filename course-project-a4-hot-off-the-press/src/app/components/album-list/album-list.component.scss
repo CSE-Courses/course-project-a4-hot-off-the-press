@@ -1,9 +1,19 @@
-div {
-    background-color: #777777;
-    height: 300px;
+.album-list {
+    background-color: #555555;
+    height: 330px;
     padding-left: 15px;
 }
 
 h2 {
     text-align: center;
 }
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+  }

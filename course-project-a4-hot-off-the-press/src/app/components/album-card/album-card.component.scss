@@ -1,13 +1,18 @@
 div {
+    display: inline-block;
     background-color:#9c9c9c;
     height: 65%;
-    float: left;
+    width: 128px;
     padding: 15px;
     border-style: solid;
     border-width: 1px;
 }
 
+p {
+    overflow-x: hidden;
+}
+
 img {
     height: 128px;
-    width: 128px
+    width: 100%;
 }
