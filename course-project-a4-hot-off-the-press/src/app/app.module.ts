@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
 import { AlbumListComponent } from './components/album-list/album-list.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { SiteHeaderComponent } from './components/site-header/site-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlbumCardComponent,
     AlbumListComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    SiteHeaderComponent
   ],
   imports: [
     BrowserModule,

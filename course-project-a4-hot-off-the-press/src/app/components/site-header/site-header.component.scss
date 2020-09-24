@@ -1,0 +1,25 @@
+#outer {
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    display: table;
+}
+
+.header-item-left {
+    padding-right: 1%;
+    float: left;
+}
+
+.header-item-right {
+    padding-left: 1%;
+    float: right;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
