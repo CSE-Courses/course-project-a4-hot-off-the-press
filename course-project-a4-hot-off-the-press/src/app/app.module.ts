@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
 import { AlbumListComponent } from './components/album-list/album-list.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlbumCardComponent,
-    AlbumListComponent
+    AlbumListComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
