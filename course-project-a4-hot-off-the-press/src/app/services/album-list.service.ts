@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Album } from '../models/album';
+import { HttpClientModule } from '@angular/common/http'
 import { NEWRELEASES, BESTSELLERS } from '../../testData'
 
 @Injectable({
