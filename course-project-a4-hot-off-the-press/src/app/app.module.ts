@@ -8,6 +8,9 @@ import { AlbumCardComponent } from './components/landing-page/album-card/album-c
 import { AlbumListComponent } from './components/landing-page/album-list/album-list.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
+import { LoginComponent } from './components/login/login.component';
+//import { AdminComponent } from './admin/admin.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
     AlbumCardComponent,
     AlbumListComponent,
     LandingPageComponent,
-    SiteHeaderComponent
+    SiteHeaderComponent,
+    LoginComponent,
+    //AdminComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
