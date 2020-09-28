@@ -9,7 +9,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', component: LandingPageComponent },
+  { path: 'home', component: LandingPageComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent
