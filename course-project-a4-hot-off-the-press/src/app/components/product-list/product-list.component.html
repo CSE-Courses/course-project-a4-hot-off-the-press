@@ -1,68 +1,71 @@
-<h1>User Information</h1>
-
-
-<div *ngFor="let settings of settings">
-  <h4>
-    <a [title]="settings.username + ' details'">
-      <h3>Username:</h3>
-      {{ settings.username }}
-    </a>
-  </h4>
-
-  <h4>
-  <textarea>
-
-  </textarea>
-  </h4>
-
-  <button (click)="username()">
-    Change Username
-  </button>
-
-  <h4>
-    <a [title]="settings.email + ' details'">
-      <h3>Email:</h3>
-      {{ settings.email }}
-    </a>
- </h4>
-
-
- <h4>
-  <textarea>
-  </textarea>
-  </h4>
-
- 
-  <button (click)="email()">
-    Update email
-  </button>
-   
-
-   
-
-  <h3>Password:</h3>
 <div>
-    <h5 for="pass">Current Password:</h5>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
-</div>
-<div>
-    <h5 for="pass">New Password (8 characters minimum):</h5>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
-</div>
- <div>
-    <h5 for="pass">Re-confirm Password:</h5>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
-</div>
+  <h1>User Information</h1>
 
-  <button (click)="password()">
-    Change Password
-  </button>
 
+  <div *ngFor="let settings of settings">
+    <h4>
+      <a [title]="settings.username + ' details'">
+        <h3>Username:</h3>
+        {{ settings.username }}
+      </a>
+    </h4>
   
-
-
-
+    <h4>
+    <textarea>
+  
+    </textarea>
+    </h4>
+  
+    <button (click)="username()">
+      Change Username
+    </button>
+  
+    <h4>
+      <a [title]="settings.email + ' details'">
+        <h3>Email:</h3>
+        {{ settings.email }}
+      </a>
+   </h4>
+  
+  
+   <h4>
+    <textarea>
+    </textarea>
+    </h4>
+  
+   
+    <button (click)="email()">
+      Update email
+    </button>
+     
+  
+     
+  
+    <h3>Password:</h3>
+  <div>
+      <h5 for="pass">Current Password:</h5>
+      <input type="password" id="pass" name="password"
+             minlength="8" required>
+  </div>
+  <div>
+      <h5 for="pass">New Password (8 characters minimum):</h5>
+      <input type="password" id="pass" name="password"
+             minlength="8" required>
+  </div>
+   <div>
+      <h5 for="pass">Re-confirm Password:</h5>
+      <input type="password" id="pass" name="password"
+             minlength="8" required>
+  </div>
+  
+    <button (click)="password()">
+      Change Password
+    </button>
+  
+    
+  
+  
+  
+  </div>
+  
 </div>

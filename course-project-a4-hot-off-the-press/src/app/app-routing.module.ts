@@ -6,10 +6,12 @@ import { LoginComponent } from './components/login/login.component'
 //import { AdminComponent } from './admin/admin.component';
 import { Component } from '@angular/core';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: LandingPageComponent },
+  { path: 'settings', component:ProductListComponent },
+  { path: '', component: LandingPageComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent
