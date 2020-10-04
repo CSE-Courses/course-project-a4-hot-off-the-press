@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/carts.css">
+</head>
+<body>
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--select all items-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    Select_all_items
+                </li>
+                <li class="list_con">Items</li>
+                <li class="list_info">Product description</li>
+                <li class="list_price">Price</li>
+                <li class="list_amount">number</li>
+                <li class="list_sum">money</li>
+                <li class="list_op">operation</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--select all Store-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    Store：<a href="javascript:;">Store_1</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 1</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/2.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 2</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$780</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$780</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/3.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 3</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$180</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$180</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--selcet all Store-->
+                    <input type="checkbox" id="shop_b" class="shopChoice">
+                    <label for="shop_b" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    Store：<a href="javascript:;">Store_2</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_4" class="son_check">
+                        <label for="checkbox_4"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/4.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 1</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$1980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$1980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_5" class="son_check">
+                        <label for="checkbox_5"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/5.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 2</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$480</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$480</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--select all-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    Store：<a href="javascript:;">Store_3</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 1</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$1980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$1980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="./images/1.png" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">Item 2</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>Specifications: default</p>
+                        <p>size：12*12*2(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">$480</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">$480</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">Delete</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--buttom-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">Selected items:<strong class="piece_num">0</strong>iteam</div>
+                <div class="totalMoney">total: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">checkout</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">Delete item<span class="closeModel">X</span></p>
+        <p>Are you sure you want to delete this product?</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">YES</a><a href="javascript:;" class="dialog-close">close</a></div>
+    </section>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/carts.js"></script>
+</body>
+</html>
