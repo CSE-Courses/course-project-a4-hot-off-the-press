@@ -1,4 +1,22 @@
 // You can add global styles to this file, and also import other style files 
 html {
-    background-color: lightblue;
+    background-color: rgb(53, 53, 53);
+    font-family: "Roboto", sans-serif;
+}
+
+.primary {
+    background: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 8px;
+    margin: 8px;
+    opacity: 0.9;
+}
+
+.secondary {
+    background: #b99292;
+    padding: 2px;
+}
+
+.tertiary {
+    background: lightslategray;
 }

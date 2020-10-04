@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { settings } from '../settings';
+import { settings } from '../../models/settings';
 
 @Component({
   selector: 'app-product-list',

@@ -1,22 +1,22 @@
 #outer {
-    background-color: lightslategray;
-    padding: 5px;
-    width: 100%;
     display: table;
+    width: 100%;
 }
 
 .header-item-left {
-    padding-right: 1%;
     float: left;
+    padding: 5px;
+    
 }
 
 .header-item-right {
-    padding-left: 1%;
     float: right;
+    padding: 5px;
 }
 
 h2 {
     color: white;
+    text-emphasis: bold;
 }
 
 a {
