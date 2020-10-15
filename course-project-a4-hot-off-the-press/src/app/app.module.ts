@@ -14,6 +14,7 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
 import { LoginComponent } from './components/login/login.component';
 //import { AdminComponent } from './admin/admin.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 
 
@@ -26,7 +27,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     SiteHeaderComponent,
     LoginComponent,
     //AdminComponent,
-    ProductListComponent
+    ProductListComponent,
+    UploadComponent
 
   ],
   imports: [

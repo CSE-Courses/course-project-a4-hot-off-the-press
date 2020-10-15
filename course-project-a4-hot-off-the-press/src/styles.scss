@@ -5,18 +5,21 @@ html {
 }
 
 .primary {
-    background: #ffffff;
+    background: #252525;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     padding: 8px;
     margin: 8px;
     opacity: 0.9;
+    border-radius: 4px;
 }
 
 .secondary {
-    background: #b99292;
+    background: #3f3f3f;
     padding: 2px;
+    border-radius: 4px;
 }
 
 .tertiary {
-    background: lightslategray;
+    border-radius: 8px;
+    background: rgb(73, 70, 65);
 }
