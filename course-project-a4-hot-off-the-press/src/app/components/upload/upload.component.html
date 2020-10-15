@@ -11,12 +11,6 @@
                 <input type="text" class="form-control" id="artist" required[(ngModel)]="model.artist" name="artist">
             </div>
             <div class="form-group">
-                <label for="genre">Genre</label>
-                <select class="form-control" id="genre" required [(ngModel)]="model.genre" name="genre" #genre="ngModel">
-                  <option *ngFor="let gen of genres" [value]="gen">{{gen}}</option>
-                </select>
-              </div>
-            <div class="form-group">
                 <label for="quality">Quality</label>
                 <input type="text" class="form-control" id="quality" required[(ngModel)]="model.quality" name="quality">
             </div>
@@ -24,7 +18,6 @@
                 <label for="quality">Price</label>
                 <input type="number" class="form-control" id="price" required[(ngModel)]="model.price" name="price">
             </div>
-            <button type="submit" [disabled]="upload.form.valid"></button>
         </form>
     </div>
 </div>
