@@ -2,18 +2,19 @@ import { Directive } from '@angular/core';
 import { NG_VALIDATORS, AbstractControl, Validators } from '@angular/forms';
 
 @Directive({
-  selector: '[appSpecChar]',
-  providers: [{provide: NG_VALIDATORS, useExisting: SpecCharDirective, multi:true}]
+  selector: '[appPriceAboveZero]',
+  providers: [{provide: NG_VALIDATORS, useExisting: PriceAboveZeroDirective, multi:true}]
+
 })
-export class SpecCharDirective extends Validators{
+export class PriceAboveZeroDirective extends Validators {
   validate(control: AbstractControl): {[key: string]: any} | null {
     return valSpecChar(control);
   }
 }
 
 export function valSpecChar(control: AbstractControl): {[key: string]: any} | null  {
-  if (control.value.match(/\W|_/g)) {
-      return { 'specChar': true };
+  if (control.value <= 0) {
+      return { 'negative': true };
   }
   return null;
 }

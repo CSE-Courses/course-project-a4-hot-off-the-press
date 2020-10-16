@@ -4,28 +4,47 @@
         <form (ngSubmit)="onSubmit()" #uploadForm="ngForm">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" required ngModel name="title" #title="ngModel" minlength="4" appSpecChar>
+                <input type="text" class="form-control" id="title" ngModel name="title" #title="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
-                    <div *ngIf="title.errors.specChar">Title cannot contain special characters</div>
+                    <div *ngIf="title.errors.specChar">Title may not contain special characters</div>
                     <div *ngIf="title.errors.required">Title is required</div>
-                    <div *ngIf="title.errors.minlength">Title must be at least 4 characters long.</div>
+                    <div *ngIf="title.errors.minlength">Title must be at least 3 characters long.</div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="artist">Artist</label>
-                <input type="text" class="form-control" id="artist" required [(ngModel)]="model.artist" name="artist" #artist="ngModel">
+                <input type="text" class="form-control" id="artist" [(ngModel)]="model.artist" name="artist" #artist="ngModel" minlength="3" appSpecChar required>
+                <div *ngIf="artist.invalid && (artist.dirty || artist.touched)" class="alert">
+                    <div *ngIf="artist.errors.specChar">Artist may not contain special characters</div>
+                    <div *ngIf="artist.errors.required">Artist is required</div>
+                    <div *ngIf="artist.errors.minlength">Artist must be at least 3 characters long.</div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="genre">Genre</label>
-                <input type="text" class="form-control" id="genre" required [(ngModel)]="model.genre" name="genre" #genre="ngModel">
+                <input type="text" class="form-control" id="genre" [(ngModel)]="model.genre" name="genre" #genre="ngModel" minlength="3" appSpecChar required>
+                <div *ngIf="genre.invalid && (genre.dirty || genre.touched)" class="alert">
+                    <div *ngIf="genre.errors.specChar">Genre may not contain special characters</div>
+                    <div *ngIf="genre.errors.required">Genre is required</div>
+                    <div *ngIf="genre.errors.minlength">Genre must be at least 3 characters long.</div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="quality">Quality</label>
-                <input type="text" class="form-control" id="quality" required [(ngModel)]="model.quality" name="quality" #artist="ngModel">
+                <input type="text" class="form-control" id="quality" [(ngModel)]="model.quality" name="quality" #quality="ngModel" maxlength="1" appQualitydir required>
+                <div *ngIf="quality.invalid && (quality.dirty || quality.touched)" class="alert">
+                    <div *ngIf="quality.errors.QualityValid">Quality must be letter from A-F</div>
+                    <div *ngIf="quality.errors.required">Quality is required</div>
+                    <div *ngIf="quality.errors.maxlength">Quality must be 1 letter</div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="price">Price</label>
-                <input type="number" class="form-control" id="price" required [(ngModel)]="model.price" name="price" #artist="ngModel">
+                <input type="number" class="form-control" id="price" required [(ngModel)]="model.price" name="price" #price="ngModel" appPriceAboveZero required>
+                <div *ngIf="price.invalid && (price.dirty || price.touched)" class="alert">
+                    <div *ngIf="price.errors.negative">Price must be a positive value</div>
+                    <div *ngIf="price.errors.required">Price is required</div>
+                </div>
             </div>
             <button>Submit</button>
         </form>

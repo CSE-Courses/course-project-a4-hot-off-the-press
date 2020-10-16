@@ -18,6 +18,8 @@ import { UploadComponent } from './components/upload/upload.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpecCharDirective } from './components/upload/directives/spec-char.directive';
+import { QualitydirDirective } from './components/upload/directives/qualitydir.directive';
+import { PriceAboveZeroDirective } from './components/upload/directives/price-above-zero.directive';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { SpecCharDirective } from './components/upload/directives/spec-char.dire
     //AdminComponent,
     ProductListComponent,
     UploadComponent,
-    SpecCharDirective
+    SpecCharDirective,
+    QualitydirDirective,
+    PriceAboveZeroDirective
 
   ],
   imports: [
