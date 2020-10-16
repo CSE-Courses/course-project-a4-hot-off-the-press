@@ -16,6 +16,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { UploadComponent } from './components/upload/upload.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ForbiddenValidatorDirective } from './components/upload/forbidden.directive';
 
 
 @NgModule({
@@ -28,13 +30,16 @@ import { UploadComponent } from './components/upload/upload.component';
     LoginComponent,
     //AdminComponent,
     ProductListComponent,
-    UploadComponent
+    UploadComponent,
+    ForbiddenValidatorDirective
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

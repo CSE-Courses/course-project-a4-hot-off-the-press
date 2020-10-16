@@ -2,7 +2,7 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: center;
 }
-p {
+label {
     color: rgb(212, 212, 212);
     line-height: 0%;
     margin: 12px 10px;
@@ -15,7 +15,13 @@ input {
     box-sizing: border-box;
 }
 
-.inner {
+#outer {
+    margin-top: 4px;
+}
+
+.alert {
+    color:rgb(165, 0, 0);
+    background-color: rgb(236, 170, 170);
     padding: 4px;
-    margin-bottom: 4px;
+    border-radius: 2px;
 }

@@ -1,23 +1,33 @@
-<div class="primary">
+<div class="primary" id="outer">
     <h2>List a Record</h2>
     <div class="secondary">
-        <form class="form-group">
+        <form (ngSubmit)="onSubmit()" #uplForm="ngForm">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" required[(ngModel)]="model.title" name="title">
+                <input type="text" class="form-control" id="title" formControlName="title" required ngModel name="title" #title="ngModel" minlength="4" appForbidden="example">
+                <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
+                    <div *ngIf="title.errors.required">Title is required</div>
+                    <div *ngIf="title.errors.minLength">Title must be at least 4 characters long.</div>
+                    <div *ngIf="title.errors.forbidden">Title cannot be example</div>
+                </div>
             </div>
             <div class="form-group">
                 <label for="artist">Artist</label>
-                <input type="text" class="form-control" id="artist" required[(ngModel)]="model.artist" name="artist">
+                <input type="text" class="form-control" id="artist" required [(ngModel)]="model.artist" name="artist" #artist="ngModel">
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" id="genre" required [(ngModel)]="model.genre" name="genre" #genre="ngModel">
             </div>
             <div class="form-group">
                 <label for="quality">Quality</label>
-                <input type="text" class="form-control" id="quality" required[(ngModel)]="model.quality" name="quality">
+                <input type="text" class="form-control" id="quality" required [(ngModel)]="model.quality" name="quality" #artist="ngModel">
             </div>
             <div class="form-group">
-                <label for="quality">Price</label>
-                <input type="number" class="form-control" id="price" required[(ngModel)]="model.price" name="price">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" required [(ngModel)]="model.price" name="price" #artist="ngModel">
             </div>
+            <button>Submit</button>
         </form>
     </div>
 </div>
