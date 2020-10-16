@@ -1,14 +1,14 @@
 <div class="primary" id="outer">
     <h2>List a Record</h2>
     <div class="secondary">
-        <form (ngSubmit)="onSubmit()" #uplForm="ngForm">
+        <form (ngSubmit)="onSubmit()" #uploadForm="ngForm">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" formControlName="title" required ngModel name="title" #title="ngModel" minlength="4" appForbidden="example">
+                <input type="text" class="form-control" id="title" required ngModel name="title" #title="ngModel" minlength="4" appSpecChar>
                 <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
+                    <div *ngIf="title.errors.specChar">Title cannot contain special characters</div>
                     <div *ngIf="title.errors.required">Title is required</div>
-                    <div *ngIf="title.errors.minLength">Title must be at least 4 characters long.</div>
-                    <div *ngIf="title.errors.forbidden">Title cannot be example</div>
+                    <div *ngIf="title.errors.minlength">Title must be at least 4 characters long.</div>
                 </div>
             </div>
             <div class="form-group">

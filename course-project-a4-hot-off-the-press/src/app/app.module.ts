@@ -17,7 +17,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { UploadComponent } from './components/upload/upload.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ForbiddenValidatorDirective } from './components/upload/forbidden.directive';
+import { SpecCharDirective } from './components/upload/directives/spec-char.directive';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { ForbiddenValidatorDirective } from './components/upload/forbidden.direc
     //AdminComponent,
     ProductListComponent,
     UploadComponent,
-    ForbiddenValidatorDirective
+    SpecCharDirective
 
   ],
   imports: [
