@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
-import { FormsModule, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { UploadService } from 'src/app/services/upload.service'
 
 //AUTHOR: Ben Badaszewski, bmbadasz
 
@@ -12,19 +13,9 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class UploadComponent implements OnInit {
   model = new Album();
-  constructor() { }
+  constructor(private us:UploadService) { }
 
   ngOnInit(): void {
-  }
-  
-  onSubmit(uploadForm:NgForm){
-    var title:string = uploadForm.value.title;
-    var artist:string = uploadForm.value.artist;
-    var genre:string = uploadForm.value.genre;
-    var quality:string = uploadForm.value.quality;
-    var price:number = uploadForm.value.price;
-    console.log(title, artist, genre, quality, price);
-    return;
   }
 
 }

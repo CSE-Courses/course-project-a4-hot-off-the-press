@@ -1,7 +1,7 @@
 <div class="primary" id="outer">
     <h2>List a Record</h2>
     <div class="secondary" id="inner">
-        <form (ngSubmit)="onSubmit(uploadForm)" #uploadForm="ngForm">
+        <form (ngSubmit)="this.us.sendData(uploadForm)" #uploadForm="ngForm">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" [(ngModel)]="uploadForm.title" name="title" #title="ngModel" minlength="3" appSpecChar required>
