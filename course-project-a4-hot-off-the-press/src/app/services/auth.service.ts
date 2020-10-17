@@ -8,4 +8,10 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
   //contact data base in this service
+
+  
+
+
 }
+
+
