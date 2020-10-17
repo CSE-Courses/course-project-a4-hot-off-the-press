@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
 import { FormsModule } from '@angular/forms';
 
+//AUTHOR: Ben Badaszewski, bmbadasz
+
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',

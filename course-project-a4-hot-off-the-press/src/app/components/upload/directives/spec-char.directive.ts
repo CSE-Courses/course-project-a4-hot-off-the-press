@@ -1,6 +1,8 @@
 import { Directive } from '@angular/core';
 import { NG_VALIDATORS, AbstractControl, Validators } from '@angular/forms';
 
+//AUTHOR: Ben Badaszewski, bmbadasz
+
 @Directive({
   selector: '[appSpecChar]',
   providers: [{provide: NG_VALIDATORS, useExisting: SpecCharDirective, multi:true}]

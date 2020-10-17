@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// AUTHOR: Ben Badaszewski, bmbadasz
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',

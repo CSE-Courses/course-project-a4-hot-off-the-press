@@ -4,7 +4,7 @@
         <form (ngSubmit)="onSubmit()" #uploadForm="ngForm">
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" ngModel name="title" #title="ngModel" minlength="3" appSpecChar required>
+                <input type="text" class="form-control" id="title" [(ngModel)]="model.title" name="title" #title="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert">
                     <div *ngIf="title.errors.specChar">Title may not contain special characters</div>
                     <div *ngIf="title.errors.required">Title is required</div>

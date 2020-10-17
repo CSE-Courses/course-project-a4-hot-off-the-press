@@ -1,6 +1,8 @@
 import { Directive } from '@angular/core';
 import { NG_VALIDATORS, AbstractControl, Validators } from '@angular/forms';
 
+//AUTHOR: Ben Badaszewski, bmbadasz
+
 @Directive({
   selector: '[appQualitydir]',
   providers: [{provide: NG_VALIDATORS, useExisting: QualitydirDirective, multi:true}]
