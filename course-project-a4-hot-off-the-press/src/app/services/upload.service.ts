@@ -11,11 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class UploadService {
   baseURL:string = 'https://ecfi61snh7.execute-api.us-east-1.amazonaws.com';
-  endpoint:string = '/cse442/input/kartik';
-  body = {
-    "Password": "yellow",
-    "Email": "joshua.meier"
-    }
+  endpoint:string = '/test/insertmusic';
+
   httpOptions = {
       headers: new HttpHeaders({ 
         'Access-Control-Allow-Origin':'*',
@@ -26,6 +23,6 @@ export class UploadService {
 
   sendData(uploadForm:NgForm){
     console.log(uploadForm.value);
-    this.http.post(this.baseURL + this.endpoint, this.body, this.httpOptions).subscribe(data => {console.log("Response: " + data);});
+    this.http.post(this.baseURL + this.endpoint, uploadForm.value, this.httpOptions).subscribe(data => {console.log("Response: " + data);});
   }
 }

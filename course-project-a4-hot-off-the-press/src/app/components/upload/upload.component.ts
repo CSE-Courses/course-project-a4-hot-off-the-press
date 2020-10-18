@@ -18,4 +18,8 @@ export class UploadComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(uploadForm:NgForm){
+    return this.us.sendData(uploadForm);
+  }
+
 }
