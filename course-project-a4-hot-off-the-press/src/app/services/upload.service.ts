@@ -15,7 +15,7 @@ export class UploadService {
 
   httpOptions = {
       headers: new HttpHeaders({ 
-        'Access-Control-Allow-Origin':'*',
+        'Content-Type': 'application/json'
       })
     };
 
