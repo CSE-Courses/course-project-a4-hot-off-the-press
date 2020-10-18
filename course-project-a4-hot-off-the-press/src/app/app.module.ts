@@ -11,12 +11,15 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
 import { LoginComponent } from './components/login/login.component';
 
 //import { AdminComponent } from './admin/admin.component';
-//import { ProductListComponent } from './components/product-list/product-list.component';
 import { UserCreationComponent } from './components/user-creation/user-creation.component';
 import { UserSettingsComponent } from './components/user-settings/user-settings.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
+import { UploadComponent } from './components/upload/upload.component';
 
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SpecCharDirective } from './components/upload/directives/spec-char.directive';
+import { QualitydirDirective } from './components/upload/directives/qualitydir.directive';
+import { PriceAboveZeroDirective } from './components/upload/directives/price-above-zero.directive';
 
 
 @NgModule({
@@ -32,13 +35,19 @@ import { OrderHistoryComponent } from './components/order-history/order-history.
     //ProductListComponent,
     UserCreationComponent,
     UserSettingsComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    UploadComponent,
+    SpecCharDirective,
+    QualitydirDirective,
+    PriceAboveZeroDirective
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
