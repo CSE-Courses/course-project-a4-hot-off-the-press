@@ -4,7 +4,7 @@
         <form (ngSubmit)="this.onSubmit(uploadForm)" #uploadForm="ngForm">
             <div class="form-group">
                 <label for="AlbumTitle">Album Title</label>
-                <input type="text" class="form-control" id="AlbumTitle" [(ngModel)]="uploadForm.Albumitle" name="AlbumTitle" #AlbumTitle="ngModel" minlength="3" appSpecChar required>
+                <input type="text" class="form-control" id="AlbumTitle" [(ngModel)]="uploadForm.AlbumTitle" name="AlbumTitle" #AlbumTitle="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="AlbumTitle.invalid && (AlbumTitle.dirty || AlbumTitle.touched)" class="alert">
                     <div *ngIf="AlbumTitle.errors.specChar">Album title may not contain special characters</div>
                     <div *ngIf="AlbumTitle.errors.required">Album title is required</div>
