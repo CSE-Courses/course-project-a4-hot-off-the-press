@@ -8,12 +8,14 @@ import { AlbumCardComponent } from './components/landing-page/album-card/album-c
 import { AlbumListComponent } from './components/landing-page/album-list/album-list.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
-
-
-
 import { LoginComponent } from './components/login/login.component';
+
 //import { AdminComponent } from './admin/admin.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
+//import { ProductListComponent } from './components/product-list/product-list.component';
+import { UserCreationComponent } from './components/user-creation/user-creation.component';
+import { UserSettingsComponent } from './components/user-settings/user-settings.component';
+import { OrderHistoryComponent } from './components/order-history/order-history.component';
+
 
 
 
@@ -25,8 +27,12 @@ import { ProductListComponent } from './components/product-list/product-list.com
     LandingPageComponent,
     SiteHeaderComponent,
     LoginComponent,
+
     //AdminComponent,
-    ProductListComponent
+    //ProductListComponent,
+    UserCreationComponent,
+    UserSettingsComponent,
+    OrderHistoryComponent
 
   ],
   imports: [
