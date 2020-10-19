@@ -19,6 +19,8 @@ export class UploadComponent implements OnInit {
   }
 
   onSubmit(uploadForm:NgForm){
+    uploadForm.value.Image="Z";
+    uploadForm.value.ProductID=0;
     this.us.sendData(uploadForm);
   }
 
