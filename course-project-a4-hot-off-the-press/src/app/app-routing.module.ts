@@ -9,18 +9,19 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { UserCreationComponent } from './components/user-creation/user-creation.component';
 import { UserSettingsComponent } from './components/user-settings/user-settings.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
 import { UploadComponent } from './components/upload/upload.component';
+import { CartComponent } from './components/cart/cart.component';
 //import { ProductListComponent } from './components/product-list/product-list.component';
 
 
 const routes: Routes = [
   { path: 'login',component: LoginComponent },
-  { path: 'settings', component:ProductListComponent },
   { path: 'upload', component:UploadComponent },
   { path: 'create-account', component: UserCreationComponent},
+  { path: 'upload', component:UploadComponent },
+  { path: 'history', component: OrderHistoryComponent },
+  { path: 'cart', component: CartComponent},
   { path: '', component: LandingPageComponent },
-  { path: 'history', component: OrderHistoryComponent }
   // {
   //   path: 'admin',
   //   component: AdminComponent
