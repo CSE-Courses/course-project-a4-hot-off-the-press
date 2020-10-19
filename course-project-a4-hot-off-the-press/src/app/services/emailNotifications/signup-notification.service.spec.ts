@@ -14,7 +14,7 @@ describe('SignupNotificationService', async () => {
 
   it('should recieve success message from AWS Gateway', inject([SignupNotificationService], async (service:SignupNotificationService) => {
     const expectedMsg:string = "Sent email notification to: <INSERT EMAIL>";
-    let msg = await service.sendNotification("signupNotificationTest", "<INSERT EMAIL>").toPromise();
+    let msg = await service.sendNotification("signupNotificationTest", "bmbadasz@buffalo.edu").toPromise();
     expect(msg).toEqual(expectedMsg);
   }));
   
