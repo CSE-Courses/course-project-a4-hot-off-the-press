@@ -8,6 +8,10 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  username: string
+  password: string
+
+
   constructor(private Auth: AuthService) { }
 
   ngOnInit(): void {
@@ -15,12 +19,9 @@ export class LoginComponent implements OnInit {
 
   loginUser(event) {
     //checking of event is triggered when submitting user and password fields
-    event.preventDefault()
-    const target = event.target
-    const username = target.querySelector('#username').value
-    const password = target.querySelector('#password').value
-    this.Auth.getUserNameConfig(username)
-    console.log(username, password)
+    this.Auth.getUserNameConfig(this.username).then(data => {
+      console.log(data)
+    })
   }
 
 }

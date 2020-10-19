@@ -1,8 +1,8 @@
 <div class = "login-page">
     <div class = "form">
         <form (submit) = "loginUser($event)">
-            <input type = "text" placeholder = "Username" id = "username">
-            <input type = "password" placeholder = "Password" id = "password">
+            <input #username type = "text" placeholder = "Username">
+            <input #password type = "password" placeholder = "Password">
             <input type = "submit" value = "Submit">
         </form>
     </div>
