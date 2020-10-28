@@ -1,6 +1,7 @@
 #outer {
     display: table;
     width: 100%;
+    border-bottom: 4px solid black;
 }
 
 .header-item-left {
@@ -14,9 +15,8 @@
     padding: 5px;
 }
 
-h2 {
-    color: white;
-    text-emphasis: bold;
+img {
+    height: 64px;
 }
 
 a {
