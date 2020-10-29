@@ -1,9 +1,9 @@
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 label {
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
     line-height: 0%;
     margin: 12px 10px;
 }
@@ -19,6 +19,7 @@ input {
     margin: auto;
     margin-top: 32px;
     width: 40%;
+    border-radius: 4px;
 }
 
 #inner {
