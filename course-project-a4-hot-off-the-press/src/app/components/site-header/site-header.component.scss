@@ -1,25 +1,23 @@
 #outer {
-    display: table;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
     border-bottom: 4px solid black;
 }
 
-.header-item-left {
-    float: left;
-    padding: 5px;
-    
-}
-
-.header-item-right {
-    float: right;
-    padding: 5px;
+#push {
+    margin-left: auto;
 }
 
 img {
-    height: 64px;
+    width: 100%;
+    height: auto;
+    max-height: 64px;
 }
 
 a {
+    padding: 5px;
     color: white;
-    text-decoration: underline;
+    display: inline-block;
 }
