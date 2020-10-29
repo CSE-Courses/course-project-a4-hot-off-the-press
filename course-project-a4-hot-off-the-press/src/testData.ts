@@ -2,8 +2,8 @@ import { Album } from './app/models/album';
 
 export const NEWRELEASES: Album[] = [
     { title: "2112", artist: "Rush", image: "", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
-    { title: "A Farewell to Kings", artist: "Rush", image: "/assets/testData/afarewelltokings.jpg", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
-    { title: "Johnny Winter", artist: "Johnny Winter", image: "/assets/testData/johnnywinter.jpg", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
+    { title: "A Farewell to Kings", artist: "Rush", image: "JUNK DATA", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
+    { title: "Johnny Winter", artist: "Johnny Winter", image: "TEST THIS", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
     { title: "Kind of Blue", artist: "Miles Davis", image: "", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
     { title: "The Wall", artist: "Pink Floyd", image: "/assets/testData/wall.jpg", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
     { title: "Abbey Road", artist: "The Beatles", image: "/assets/testData/abbeyroad.jpg", genre:"", price:0, username:"", quality:"A", productID:"", date:"" },
