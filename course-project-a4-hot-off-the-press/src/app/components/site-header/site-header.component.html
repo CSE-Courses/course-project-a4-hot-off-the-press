@@ -2,8 +2,8 @@
     <a routerLink="/"><img height="96px" src="../../../assets/logo.png"></a>
     <div id="push"></div>
     <a routerLink="/history">Order History</a>
-    <a routerLink="/upload"><img src="../../../assets/sell.png"></a>
-    <a routerLink="/cart"><img src="../../../assets/cart.png"></a>
-    <a routerLink="/user-settings"><img src="../../../assets/settings.png"></a>
-    <a routerLink="/login"><img src="../../../assets/login.png"></a>
+    <app-header-elem [imgSrc]="'../../../assets/site-header/sell.png'" [path]="'upload'"></app-header-elem>
+    <app-header-elem [imgSrc]="'../../../assets/site-header/cart.png'" [path]="'cart'"></app-header-elem>
+    <app-header-elem [imgSrc]="'../../../assets/site-header/settings.png'" [path]="'user-settings'"></app-header-elem>
+    <app-header-elem [imgSrc]="'../../../assets/site-header/login.png'" [path]="'login'"></app-header-elem>
 </div>
