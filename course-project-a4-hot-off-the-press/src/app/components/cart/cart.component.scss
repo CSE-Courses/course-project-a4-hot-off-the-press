@@ -32,7 +32,7 @@
     line-height:32px;
     padding:0px 20px 0px 20px;
     background:#534b4b;
-    font-size:12px;
+    font-size:15px;
     font-weight:800;
     color:#eee8e5;
   }
@@ -63,7 +63,7 @@
     display:flex;
     padding:0px 20px 0px 20px;
     background:#ffffff;
-    font-size:14px;
+    font-size:18px;
   }
   
   .image {
@@ -79,6 +79,7 @@
     flex:1;
     /* background:lightgreen; */
     background:#ffffff;
+    color:#444444;
     padding:15px 25px 15px 10px;
     border-bottom:1px solid #dddddd;
   }
@@ -90,6 +91,8 @@
   
   .type {
     background:#ffffff;
+    color:#444444;
+    
   }
   
   .payment {
@@ -100,6 +103,7 @@
     padding:15px 10px 15px 10px;
     color:#444444;
     border-bottom:1px solid #dddddd;
+    font-weight:bold
   }
   
   .footer {
