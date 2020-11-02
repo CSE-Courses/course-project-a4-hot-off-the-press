@@ -2,9 +2,9 @@
     <div class="CartBtn" 
          (click)="CartBtn()"
          [ngStyle]="{'background': CartClicked ? '#ffffff' : 'transparent',
-                     'color' : CartClicked ? '#444444' : '#999999',
-                     'borderTop' : CartClicked ? '4px solid #0543A5' : '0px solid transparent'}"
-         ></div> 
+                     'color' : CartClicked ? '#000000' : '#999999',
+                     'borderTop' : CartClicked ? '4px solid #fa7272' : '0px solid transparent'}"
+         >Cart</div> 
   </div>
 
 
@@ -13,7 +13,7 @@
   <!-- Order History (STARTS) --> 
   <div *ngIf="CartContent">
   <div class="container">
-    <div class="CartTitle"></div>
+    <div class="CartTitle">Shopping Cart</div>
   </div>
   
   <div class="tableTitleContainer">
