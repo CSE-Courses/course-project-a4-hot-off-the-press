@@ -21,6 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpecCharDirective } from './components/upload/directives/spec-char.directive';
 import { QualitydirDirective } from './components/upload/directives/qualitydir.directive';
 import { PriceAboveZeroDirective } from './components/upload/directives/price-above-zero.directive';
+import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -40,12 +42,13 @@ import { PriceAboveZeroDirective } from './components/upload/directives/price-ab
     UploadComponent,
     SpecCharDirective,
     QualitydirDirective,
-    PriceAboveZeroDirective
-
+    PriceAboveZeroDirective,
+    HeaderElemComponent,
+    CartComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,

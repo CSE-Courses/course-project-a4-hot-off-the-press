@@ -14,7 +14,7 @@ export class SpecCharDirective extends Validators{
 }
 
 export function valSpecChar(control: AbstractControl): {[key: string]: any} | null  {
-  if (control.value.match(/[ _]\W|_/g)) {
+  if (control.value.match(/[^A-Z^a-z^0-9^ ]/g)) {
       return { 'specChar': true };
   }
   return null;

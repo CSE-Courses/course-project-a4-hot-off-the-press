@@ -14,4 +14,8 @@ export class AlbumCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  public setPlaceholderPic(){
+    this.album.image = "../../../../assets/alb.png";
+  }
 }
