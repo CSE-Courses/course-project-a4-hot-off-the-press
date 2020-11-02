@@ -1,9 +1,9 @@
 <div class="primary" id="outer">
-    <h2>List a Record</h2>
+    <h2>LIST A RECORD</h2>
     <div class="secondary" id="inner">
         <form (ngSubmit)="this.onSubmit(uploadForm)" #uploadForm="ngForm">
             <div class="form-group">
-                <label for="AlbumTitle">Album Title</label>
+                <label for="AlbumTitle">ALBUM TITLE</label>
                 <input type="text" class="form-control" id="AlbumTitle" [(ngModel)]="uploadForm.AlbumTitle" name="AlbumTitle" #AlbumTitle="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="AlbumTitle.invalid && (AlbumTitle.dirty || AlbumTitle.touched)" class="alert">
                     <div *ngIf="AlbumTitle.errors.specChar">Album title may not contain special characters</div>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="Artist">Artist</label>
+                <label for="Artist">ARTIST</label>
                 <input type="text" class="form-control" id="Artist" [(ngModel)]="uploadForm.Artist" name="Artist" #Artist="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="Artist.invalid && (Artist.dirty || Artist.touched)" class="alert">
                     <div *ngIf="Artist.errors.specChar">Artist may not contain special characters</div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="Genre">Genre</label>
+                <label for="Genre">GENRE</label>
                 <input type="text" class="form-control" id="Genre" [(ngModel)]="uploadForm.Genre" name="Genre" #Genre="ngModel" minlength="3" appSpecChar required>
                 <div *ngIf="Genre.invalid && (Genre.dirty || Genre.touched)" class="alert">
                     <div *ngIf="Genre.errors.specChar">Genre may not contain special characters</div>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="Quality">Quality</label>
+                <label for="Quality">QUALITY</label>
                 <input type="text" class="form-control" id="Quality" [(ngModel)]="uploadForm.Quality" name="Quality" #Quality="ngModel" maxlength="1" appQualitydir required>
                 <div *ngIf="Quality.invalid && (Quality.dirty || Quality.touched)" class="alert">
                     <div *ngIf="Quality.errors.QualityValid">Quality must be letter from A-F</div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="Price">Price</label>
+                <label for="Price">PRICE</label>
                 <input type="number" class="form-control" id="Price" required [(ngModel)]="uploadForm.Price" name="Price" #Price="ngModel" appPriceAboveZero required>
                 <div *ngIf="Price.invalid && (Price.dirty || Price.touched)" class="alert">
                     <div *ngIf="Price.errors.negative">Price must be a positive value</div>

@@ -5,11 +5,18 @@
                      'color' : CartClicked ? '#000000' : '#999999',
                      'borderTop' : CartClicked ? '4px solid #fa7272' : '0px solid transparent'}"
          >Cart</div> 
-  </div>
+</div>
 
-
-  
-  
+<div class="btnGroup">
+  <div class="orderHistoryBtn" 
+       (click)="orderHistoryBtn()"
+       [ngStyle]="{'background': orderHistoryClicked ? '#ffffff' : 'transparent',
+                   'color' : orderHistoryClicked ? '#444444' : '#999999',
+                   'borderTop' : orderHistoryClicked ? '4px solid #fa7272' : '0px solid transparent'}"
+       ></div>
+       <div routerLink="/history">Order History</div>
+</div>
+ 
   <!-- Order History (STARTS) --> 
   <div *ngIf="CartContent">
   <div class="container">
