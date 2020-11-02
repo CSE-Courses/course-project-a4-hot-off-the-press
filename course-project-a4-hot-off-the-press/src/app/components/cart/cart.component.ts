@@ -27,7 +27,6 @@ export class CartComponent{
     this.nextContent = true;
 
   }
-  
 
   addCard() {
 

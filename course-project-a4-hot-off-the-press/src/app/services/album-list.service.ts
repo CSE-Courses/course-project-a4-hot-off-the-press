@@ -9,6 +9,8 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AlbumListService {
+
+
   //getUrl: string = "https://ecfi61snh7.execute-api.us-east-1.amazonaws.com/test/newreleases/Songlines";
 
   constructor(private http: HttpClient) { }
