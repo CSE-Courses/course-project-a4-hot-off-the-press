@@ -3,8 +3,9 @@
          (click)="orderHistoryBtn()"
          [ngStyle]="{'background': orderHistoryClicked ? '#ffffff' : 'transparent',
                      'color' : orderHistoryClicked ? '#444444' : '#999999',
-                     'borderTop' : orderHistoryClicked ? '4px solid transparent' : '0px solid transparent'}"
-         ></div>
+                     'borderTop' : orderHistoryClicked ? '4px solid #fa7272' : '0px solid transparent'}"
+         ><div routerLink="/cart">Back to Cart</div></div>
+         
   </div>
   
   <!-- Order History (STARTS) --> 

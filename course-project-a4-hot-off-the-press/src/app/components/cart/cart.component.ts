@@ -9,6 +9,9 @@ export class CartComponent{
 
   CartClicked = true;
   CartContent = true;
+  nextClicked = true;
+  nextContent = true;
+
 
   ngOnInit() {
 
@@ -19,6 +22,11 @@ export class CartComponent{
     this.CartContent = true;
   }
 
+  nextBtn(){
+    this.nextClicked = true;
+    this.nextContent = true;
+
+  }
   
 
   addCard() {
