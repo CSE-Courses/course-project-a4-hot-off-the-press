@@ -21,6 +21,8 @@ import { SpecCharDirective } from './components/upload/directives/spec-char.dire
 import { QualitydirDirective } from './components/upload/directives/qualitydir.directive';
 import { PriceAboveZeroDirective } from './components/upload/directives/price-above-zero.directive';
 import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
+import { CartComponent } from './components/cart/cart.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { HeaderElemComponent } from './components/site-header/header-elem/header
     SpecCharDirective,
     QualitydirDirective,
     PriceAboveZeroDirective,
-    HeaderElemComponent
+    HeaderElemComponent,
+    CartComponent,
   ],
   imports: [
     AppRoutingModule,
