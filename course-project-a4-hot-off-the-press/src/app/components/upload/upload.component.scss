@@ -1,0 +1,59 @@
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+label {
+    color: rgb(212, 212, 212);
+    line-height: 0%;
+    margin: 12px 10px;
+}
+
+input {
+    width:100%;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+
+#outer {
+    margin: auto;
+    margin-top: 32px;
+    width: 40%;
+}
+
+#inner {
+    margin: 6px;
+}
+
+.alert {
+    color:rgb(165, 0, 0);
+    background-color: rgb(236, 170, 170);
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.form-group {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.btn-invalid {
+    border: 2px solid rgb(125, 0, 0);
+    color: rgb(125,0,0);
+    background-color: rgb(255, 172, 172);
+}
+
+.btn-valid {
+    border: 2px solid rgb(0,125,0);
+    color: rgb(0,125,0);
+    background-color: rgb(172, 255, 172);
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 10px;
+}

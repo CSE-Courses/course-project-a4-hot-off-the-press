@@ -1,22 +1,24 @@
 // You can add global styles to this file, and also import other style files 
 html {
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(36, 36, 36);
     font-family: "Roboto", sans-serif;
 }
 
 .primary {
-    background: #ffffff;
+    background: #2e2e2e;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     padding: 8px;
     margin: 8px;
     opacity: 0.9;
+    border-radius: 4px;
 }
 
 .secondary {
-    background: #b99292;
-    padding: 2px;
+    background: #3f3f3f;
+    border-radius: 4px;
 }
 
 .tertiary {
-    background: lightslategray;
+    border-radius: 8px;
+    background: rgb(73, 70, 65);
 }
