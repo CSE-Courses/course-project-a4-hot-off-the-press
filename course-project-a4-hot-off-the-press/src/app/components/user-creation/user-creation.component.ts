@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostAccountService } from '../../services/post-account.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-user-creation',
@@ -8,13 +10,18 @@ import { PostAccountService } from '../../services/post-account.service';
 })
 export class UserCreationComponent implements OnInit {
 
-  constructor(private Post: PostAccountService) { }
+  constructor(private Post: PostAccountService, private route: Router) { }
 
   ngOnInit(): void {
   }
 
-  createAccount(event) {
-
+  onSubmit(uploadForm: NgForm) {
+    this.Post.sendUserInfo(uploadForm)
+    this.route.navigate(['/'])
   }
+
+  // createAccount(event) {
+
+  // }
 
 }

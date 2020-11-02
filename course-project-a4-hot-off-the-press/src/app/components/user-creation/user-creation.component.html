@@ -1,12 +1,12 @@
 <div class = "create-account-page">
     <div class = "form">
-        <form (submit) = "createAccount($event)">
-            <input type = "text" placeholder = "Enter new username" id = "username">
-            <input type = "password" placeholder = "Enter new password" id = "password">
-            <input type = "password" placeholder = "Reenter new password" id = "re_password">
-            <input type = "text" placeholder="Enter an email" id = "email">
+        <form (ngSubmit) = "this.onSubmit(uploadForm)" #uploadForm = "ngForm">
+            <input type = "text" placeholder = "Enter new username" id = "Username" [(ngModel)]="uploadForm.Username" name = "Username" #Username="ngModel">
+            <input type = "password" placeholder = "Enter new password" id = "Password" [(ngModel)]="uploadForm.Password" name = "Password" #Password="ngModel">
+            <!----input type = "password" placeholder = "Reenter new password" id = "re_password"---->
+            <input type = "text" placeholder="Enter an email" id = "Email" [(ngModel)]="uploadForm.Email" name = "Email" #Email="ngModel">
             <!----input type = "date" placeholder="Enter date of birth" id = "DOB"!------->
-            <input type = "submit" value = "Create new account">
+            <input [disabled]="!uploadForm.valid" [ngClass]="{'btn-valid':uploadForm.valid, 'btn-invalid':uploadForm.invalid}" type = "submit" value = "Create new account">
         </form>
     </div>
 </div>

@@ -14,14 +14,15 @@
 # data = res.read()
 # print(data.decode("utf-8"))
 
-import http.client
-import mimetypes
-conn = http.client.HTTPSConnection("ecfi61snh7.execute-api.us-east-1.amazonaws.com")
-payload = "{\r\n\"Username\": \"Kartik\", \r\n\"Password\": \"yellow\",\r\n\"Email\": \"joshua.meier\"\r\n}"
+import requests
+
+url = "https://ecfi61snh7.execute-api.us-east-1.amazonaws.com/test/getid/test1"
+
+payload = {}
 headers = {
-  'Content-Type': 'application/json'
+  'x-api-key': '3IoVrnoyYf3Ttlft13Eim1r2iBQ9Cf1H8xHlbeZA'
 }
-conn.request("POST", "/test/input", payload, headers)
-res = conn.getresponse()
-data = res.read()
-print(data.decode("utf-8"))
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))

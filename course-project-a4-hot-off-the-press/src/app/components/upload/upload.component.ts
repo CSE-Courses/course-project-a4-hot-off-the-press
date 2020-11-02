@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
 import { NgForm } from '@angular/forms';
-import { UploadService } from 'src/app/services/upload.service'
+import { UploadService } from 'src/app/services/upload.service';
 
 //AUTHOR: Ben Badaszewski, bmbadasz
 
