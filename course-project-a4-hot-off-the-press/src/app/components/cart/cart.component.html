@@ -1,12 +1,16 @@
-<div class="btnGroup">
-  <div class="CartBtn" 
-       (click)="CartBtn()"
-       [ngStyle]="{'background': CartClicked ? '#ffffff' : 'transparent',
-                   'color' : CartClicked ? '#000000' : '#999999',
-                   'borderTop' : CartClicked ? '4px solid #fa7272' : '0px solid transparent'}"
-       ><div routerLink="/history">View Past Orders</div></div>
-
+<div id="subHeader">
+  <div class="btnGroup">Cart</div>
+  <div class="btnGroup">
+    <div class="CartBtn" 
+         (click)="CartBtn()"
+         [ngStyle]="{'background': CartClicked ? '#ffffff' : 'transparent',
+                     'color' : CartClicked ? '#000000' : '#999999',
+                     'borderTop' : CartClicked ? '4px solid #fa7272' : '0px solid transparent'}"
+         ><div routerLink="/history">Past Orders</div></div>
+  
+  </div>
 </div>
+
 
 
 <!-- Order History (STARTS) --> 
