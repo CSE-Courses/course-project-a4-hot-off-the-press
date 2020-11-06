@@ -16,13 +16,23 @@ export class AlbumListComponent implements OnInit {
 
   ngOnInit(): void {
     //this.showAlbums();
-    this.albums = this.albumListService.getAlbums(this.listTitle);
+    let resp = this.mapData();
+    console.log("RESP: ", this.albums);
   }
 
-  //TODO: Have this show JSON data from database server
-  /*
-  showAlbums() {
-    this.albumListService.getAlbums(this.listTitle).subscribe(data => this.albums = JSON.parse(JSON.stringify(data)));
+  mapData() {
+    return this.albumListService.getAlbums().then(data => {
+      this.albums = data.Items.map(alb => {
+        const container = new Album();
+        container.title = alb.AlbumTitle;
+        container.artist = alb.Artist;
+        container.date = "";
+        container.genre = alb.Genre;
+        container.price = alb.Price;
+        container.productID = alb.ProductID;
+        container.quality = alb.Quality;
+        return container;
+      });
+    });
   }
-  */
 }
