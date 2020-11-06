@@ -10,11 +10,10 @@ import { map } from 'rxjs/operators';
 })
 export class AlbumListService {
   getUrl: string = "https://ecfi61snh7.execute-api.us-east-1.amazonaws.com/test/batchget/";
-  endPt: string = "rock";
 
   constructor(private http: HttpClient) { }
 
-  getAlbums(){
-    return this.http.get(this.getUrl + this.endPt).toPromise();
+  getAlbums(endPoint:string){
+    return this.http.get(this.getUrl + endPoint).toPromise();
   }
 }

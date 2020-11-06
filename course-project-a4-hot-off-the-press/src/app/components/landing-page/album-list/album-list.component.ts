@@ -10,19 +10,20 @@ import { Album } from '../../../models/album'
 export class AlbumListComponent implements OnInit {
   /* listTitle - name of the list, albums - albums to be displayed */
   @Input() listTitle: string;
+  @Input() endPoint: string;
   albums: Album[] = [];
 
   constructor(private albumListService:AlbumListService) { }
 
   ngOnInit(): void {
     //this.showAlbums();
-    let resp = this.mapData();
-    console.log("RESP: ", this.albums);
+    this.mapData();
   }
 
   mapData() {
-    return this.albumListService.getAlbums().then(data => {
-      this.albums = data.Items.map(alb => {
+    return this.albumListService.getAlbums(this.endPoint).then(data => {
+      console.log(data);
+      try { this.albums = data["Items"].map(alb => {
         const container = new Album();
         container.title = alb.AlbumTitle;
         container.artist = alb.Artist;
@@ -31,8 +32,11 @@ export class AlbumListComponent implements OnInit {
         container.price = alb.Price;
         container.productID = alb.ProductID;
         container.quality = alb.Quality;
+        container.image = alb.Image;
         return container;
-      });
+      }); } catch (Error){
+        console.log(Error);
+      }
     });
   }
 }
