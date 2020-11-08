@@ -1,0 +1,35 @@
+<div id="subHeader">
+  <div class="btnGroup">
+    <div class="orderHistoryBtn" 
+         (click)="orderHistoryBtn()"
+         [ngStyle]="{'background': orderHistoryClicked ? '#ffffff' : 'transparent',
+                     'color' : orderHistoryClicked ? '#000000' : '#999999',
+                     'borderTop' : orderHistoryClicked ? '4px solid #fa7272' : '0px solid transparent'}">
+         <div routerLink="/cart">Cart</div>
+    </div>
+  </div>
+  <div class="btnGroup">Past Orders</div>
+</div>
+
+<!-- Order History (STARTS) --> 
+<div *ngIf="orderHistoryContent">
+<div class="container">
+  <div class="orderHistoryTitle">PAST ORDERS</div>
+</div>
+
+<div class="tableTitleContainer">
+  <div class="dateTitle">PLACED </div>
+  <div class="descriptionTitle">ORDER </div>
+  <div class="paymentTitle">AMOUNT</div>
+</div>
+
+<div class="tableListItemsContainer">
+  <div class="date">10/31/17</div>
+  <div class="description">
+    <div class="title">Metallica ‎– Ride The Lightning</div>
+    <div class="type">Megaforce Records ‎– MRI 769</div>
+    </div>
+  <div class="payment">$4,694.12</div>
+</div>
+
+</div>

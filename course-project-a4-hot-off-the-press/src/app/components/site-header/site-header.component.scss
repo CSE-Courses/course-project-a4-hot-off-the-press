@@ -1,0 +1,17 @@
+#outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-bottom: 4px solid black;
+}
+
+#push {
+    margin-left: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 96px;
+}

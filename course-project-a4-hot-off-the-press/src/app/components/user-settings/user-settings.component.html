@@ -1,0 +1,56 @@
+<div *ngFor="let settings of settings">
+   <h3>Username: romi_sai</h3>
+
+   
+  <button (click)="username()">
+    CHANGE USERNAME
+  </button>
+  <h2>
+Your new username is <span id="outputName">____</span>.
+</h2>
+ <br><br>
+
+
+  
+
+  <h3>Email: romikasairam@gmail.com</h3>
+
+   
+  <button (click)="email()">
+    CHANGE EMAIL
+  </button>
+  <h2>
+Your new email is <span id="outputNew">____</span>.
+</h2>
+ <br><br>
+   
+
+   
+
+  <h3>Password:</h3>
+<div>
+    <h5 for="pass">Current Password:</h5>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+<div>
+    <h5 for="pass">New Password (8 characters minimum):</h5>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+ <div>
+    <h5 for="pass">Re-confirm Password:</h5>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+
+  <button (click)="password()">
+    CHANGE PASSWORD
+  </button>
+
+
+
+
+
+
+</div>

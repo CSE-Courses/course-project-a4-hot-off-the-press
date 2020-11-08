@@ -1,0 +1,10 @@
+<div class = "login-page">
+    <div class = "form">
+        <form (submit) = "loginUser($event)">
+            <input #username type = "text" placeholder = "Username">
+            <input #password type = "password" placeholder = "Password">
+            <input type = "submit" value = "Submit">
+        </form>
+        <a routerLink="/create-account">Create New Account</a>
+    </div>
+</div>

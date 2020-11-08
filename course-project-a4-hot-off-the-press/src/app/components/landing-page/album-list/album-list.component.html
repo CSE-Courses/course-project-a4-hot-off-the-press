@@ -1,0 +1,6 @@
+<div id="album-list" class="secondary">
+    <h2>{{ this.listTitle }}</h2>
+    <div class="scrolling-wrapper">
+        <app-album-card *ngFor="let album of albums" [album]="album"></app-album-card>
+    </div> 
+</div>
