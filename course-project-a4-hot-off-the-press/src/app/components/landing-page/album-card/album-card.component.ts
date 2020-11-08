@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
-import { AlbumListService } from 'src/app/services/album-list.service';
+import { IndividualProductsService } from 'src/app/services/individual-products.service';
+import { Router } from '@angular/router';
 
 //Author: Ben Badaszewski
 
@@ -13,7 +14,7 @@ export class AlbumCardComponent implements OnInit {
   /* Album to be displayed on card */
   @Input() album: Album;
 
-  constructor() { }
+  constructor(private router:Router, private ips:IndividualProductsService) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +24,8 @@ export class AlbumCardComponent implements OnInit {
   }
 
   public onClick(){
-    console.log(this.getAlbum());
+    this.ips.set(this.getAlbum());
+    this.router.navigateByUrl('/details');
   }
   
   public getAlbum(): Album{
