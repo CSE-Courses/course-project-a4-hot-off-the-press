@@ -4,6 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class IndividualProductsService {
+  static get(arg0: string) {
+    throw new Error("Method not implemented.");
+  }
+  static set(arg0: import("../models/album").Album) {
+    throw new Error("Method not implemented.");
+  }
 
   constructor() { }
 
