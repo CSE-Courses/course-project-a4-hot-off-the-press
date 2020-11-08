@@ -17,10 +17,10 @@ export class IndividualProductsService {
     savedData:Album;
     set(data:Album) {
       this.savedData = data
-      console.log(this.savedData);
+    //  console.log(this.savedData);
     }
     get() {
-      console.log(this.savedData);
+     // console.log(this.savedData);
       return this.savedData;
     }
 
