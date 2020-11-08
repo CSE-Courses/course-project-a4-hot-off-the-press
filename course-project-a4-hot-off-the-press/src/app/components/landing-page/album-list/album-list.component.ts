@@ -22,7 +22,6 @@ export class AlbumListComponent implements OnInit {
 
   mapData() {
     return this.albumListService.getAlbums(this.endPoint).then(data => {
-      console.log(data);
       try { this.albums = data["Items"].map(alb => {
         const container = new Album();
         container.title = alb.AlbumTitle;
