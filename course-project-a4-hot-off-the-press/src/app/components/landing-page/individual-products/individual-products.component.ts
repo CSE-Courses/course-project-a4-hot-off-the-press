@@ -8,14 +8,12 @@ import { Album } from '../../../models/album'
   styleUrls: ['./individual-products.component.scss']
 })
 export class IndividualProductsComponent implements OnInit {
-  
-  @Input() listTitle: string;
-  albums: Album[] = [];
+  album: Album;
 
-  constructor(private individualproductsservice:IndividualProductsService) { }
+  constructor(private ips:IndividualProductsService) { }
 
   ngOnInit(): void {
-   IndividualProductsService.get("Your_Data"); 
+    this.ips.get(); 
   }
 
 }
