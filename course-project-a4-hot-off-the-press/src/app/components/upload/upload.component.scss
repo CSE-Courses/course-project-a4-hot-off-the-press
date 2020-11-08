@@ -1,9 +1,12 @@
 h2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background:rgb(92, 90, 90);
     color: rgb(255, 255, 255);
     text-align: center;
 }
 label {
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
     line-height: 0%;
     margin: 12px 10px;
 }
@@ -19,6 +22,8 @@ input {
     margin: auto;
     margin-top: 32px;
     width: 40%;
+    min-width: 400px;
+    border-radius: 4px;
 }
 
 #inner {
@@ -38,15 +43,15 @@ input {
 }
 
 .btn-invalid {
-    border: 2px solid rgb(125, 0, 0);
-    color: rgb(125,0,0);
-    background-color: rgb(255, 172, 172);
+    border: 2px solid rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
+    background-color: rgb(216, 216, 216);
 }
 
 .btn-valid {
-    border: 2px solid rgb(0,125,0);
-    color: rgb(0,125,0);
-    background-color: rgb(172, 255, 172);
+    border: 2px solid rgb(53, 53, 53);
+    color: rgb(53, 53, 53);
+    background-color: rgb(211, 211, 211);
 }
 
 button {

@@ -12,7 +12,6 @@ import { UploadService } from 'src/app/services/upload.service';
 
 })
 export class UploadComponent implements OnInit {
-  model = new Album();
   constructor(private us:UploadService) { }
 
   ngOnInit(): void {
