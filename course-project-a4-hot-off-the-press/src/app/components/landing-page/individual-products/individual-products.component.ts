@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AlbumListService } from '../../../services/album-list.service'
+import { Album } from '../../../models/album'
 
 @Component({
   selector: 'app-individual-products',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndividualProductsComponent implements OnInit {
   
+  @Input() listTitle: string;
+  albums: Album[] = [];
 
-  constructor() { }
+  constructor(private albumListService:AlbumListService) { }
 
   ngOnInit(): void {
+    //this.showAlbums();
+    //this.albums = this.albumListService.getAlbums(this.listTitle);
   }
 
 }

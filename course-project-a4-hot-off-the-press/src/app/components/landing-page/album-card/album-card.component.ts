@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
+import { AlbumListService } from 'src/app/services/album-list.service';
+
+//Author: Ben Badaszewski
 
 @Component({
   selector: 'app-album-card',
@@ -17,5 +20,13 @@ export class AlbumCardComponent implements OnInit {
 
   public setPlaceholderPic(){
     this.album.image = "../../../../assets/alb.png";
+  }
+
+  public onClick(){
+    console.log(this.getAlbum());
+  }
+  
+  public getAlbum(): Album{
+    return this.album;
   }
 }
