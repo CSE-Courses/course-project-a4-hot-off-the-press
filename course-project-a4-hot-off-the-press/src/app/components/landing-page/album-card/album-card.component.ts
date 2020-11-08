@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
 import { AlbumListService } from 'src/app/services/album-list.service';
-
+import { IndividualProductsService} from 'src/app/services/individual-products.service'
 //Author: Ben Badaszewski
 
 @Component({
@@ -24,6 +24,8 @@ export class AlbumCardComponent implements OnInit {
 
   public onClick(){
     console.log(this.getAlbum());
+    IndividualProductsService.set(this.getAlbum());
+
   }
   
   public getAlbum(): Album{

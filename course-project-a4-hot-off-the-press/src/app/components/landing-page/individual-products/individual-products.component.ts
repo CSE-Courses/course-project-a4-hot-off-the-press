@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AlbumListService } from '../../../services/album-list.service'
+import { IndividualProductsService } from '../../../services/individual-products.service'
 import { Album } from '../../../models/album'
 
 @Component({
@@ -12,11 +12,10 @@ export class IndividualProductsComponent implements OnInit {
   @Input() listTitle: string;
   albums: Album[] = [];
 
-  constructor(private albumListService:AlbumListService) { }
+  constructor(private individualproductsservice:IndividualProductsService) { }
 
   ngOnInit(): void {
-    //this.showAlbums();
-    //this.albums = this.albumListService.getAlbums(this.listTitle);
+   IndividualProductsService.get("Your_Data"); 
   }
 
 }
