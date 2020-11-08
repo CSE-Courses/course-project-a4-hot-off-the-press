@@ -1,0 +1,148 @@
+h1{
+  color: #534b4b;
+  font-size: 30px;
+  font-weight: bold;
+
+
+}
+
+.btnGroup {
+  display:flex;
+  height:36px;
+  line-height:36px;
+  font-size:15px;
+  color:#000000;
+  font-weight:800;
+}
+
+.cartBtn {
+  /* flex:1; */
+  padding:0px 10px 0px 10px;
+  background:rgb(92, 90, 90);
+  cursor:pointer;
+}
+
+.cartTitle {
+  background:#fdfdfd;
+}
+
+.container {
+  display:flex;
+  padding:20px;
+  background:#ffffff;
+  font-size:27px;
+  font-weight:bold;
+  color:#464242;
+}
+
+.tableTitleContainer {
+  display:flex;
+  height:32px;
+  line-height:32px;
+  padding:0px 20px 0px 20px;
+  background:#534b4b;
+  font-size:15px;
+  font-weight:800;
+  color:#eee8e5;
+}
+.imageTitle {
+  /* flex:1; */
+  /* background:blue; */
+  background:#534b4b;
+  padding:0px 25px 0px 10px;
+  width:500px;
+}
+
+.tableListItemsContainer {
+  display:flex;
+  padding:0px 20px 0px 20px;
+  background:#ffffff;
+  font-size:18px;
+}
+
+.image {
+  /* flex:1; */
+  width: 500px;
+  /* background:lightblue; */
+  background:#ffffff;
+  padding:15px 25px 15px 10px;
+  color:#444444;
+  border-bottom:0px solid #dddddd;
+}
+.product {
+  flex:1;
+  /* background:lightgreen; */
+  background:#ffffff;
+  color:#000000;
+  font-size:20px;
+  padding:15px 25px 15px 10px;
+  border-bottom:0px solid #dddddd;
+}
+
+.title {
+  font-weight:bolder;
+  font-size:30px;
+  background:#fffefe;
+}
+
+.type {
+  background:#ffffff;
+  font-weight:light;
+  font-size:22px;
+  color:#000000;
+  
+}
+
+.payment {
+  background:#ffffff;
+  font-size:30px;
+  font-weight: bold;
+  color:#000000;
+  
+}
+
+.genre{
+  background:#ffffff;
+  font-size:22px;
+  font-weight: light;
+  color:#000000;
+}
+
+.date{
+  background:#ffffff;
+  font-size:22px;
+  font-weight: light;
+  color:#000000;
+}
+
+.quality{
+  background:#ffffff;
+  font-size:22px;
+  font-weight: light;
+  color:#000000;
+}
+
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(92, 90, 90);
+  color: white;
+  border: none;
+}
+
+
+.footer {
+  padding:0px 20px 40px 20px;
+  background:#ffffff;
+}
+
+
+
+#subHeader {
+    display: flex;
+    flex-direction: row;
+  }
