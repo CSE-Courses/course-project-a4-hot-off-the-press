@@ -1,5 +1,5 @@
 <div id="outer">
-    <div id="inner" class="tertiary">
+    <div id="inner" class="tertiary" routerLink="/details">
         <img src="{{ album.image }}" (error)="setPlaceholderPic()">
         <p>{{ album.title }}</p>
         <p>{{ album.artist }}</p>

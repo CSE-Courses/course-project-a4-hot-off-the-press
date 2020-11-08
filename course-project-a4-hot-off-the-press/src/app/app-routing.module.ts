@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component'
 //import { AdminComponent } from './admin/admin.component';
 import { Component } from '@angular/core';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { IndividualProductsComponent } from './components/landing-page/individual-products/individual-products.component';
 import { UserCreationComponent } from './components/user-creation/user-creation.component';
 import { UserSettingsComponent } from './components/user-settings/user-settings.component';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'history', component: OrderHistoryComponent },
   { path: 'cart', component: CartComponent},
   { path: '', component: LandingPageComponent },
+  { path: 'details', component: IndividualProductsComponent},
   // {
   //   path: 'admin',
   //   component: AdminComponent
