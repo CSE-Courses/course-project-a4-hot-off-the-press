@@ -74,7 +74,8 @@ export class ContactComponent implements OnInit {
   ngOnInit() {}
 
   processForm() {
-    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
+    const allInfo = `Dear ${this.name}, We have received your feedback "${this.message}". We will send a reply to your email ${this.email} as soon as possible. Thank you!`;
+    
     alert(allInfo); 
   }
 
