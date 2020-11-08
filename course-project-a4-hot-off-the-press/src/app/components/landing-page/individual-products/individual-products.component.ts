@@ -13,7 +13,7 @@ export class IndividualProductsComponent implements OnInit {
   constructor(private ips:IndividualProductsService) { }
 
   ngOnInit(): void {
-    this.ips.get(); 
+    this.album = this.ips.get(); 
   }
 
 }
