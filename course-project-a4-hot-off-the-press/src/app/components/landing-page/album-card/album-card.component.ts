@@ -1,11 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Album } from 'src/app/models/album';
-<<<<<<< HEAD
 import { AlbumListService } from 'src/app/services/album-list.service';
 
 //Author: Ben Badaszewski
-=======
->>>>>>> 84fdd71870e87049d23a434b10e5f3482957e076
 
 @Component({
   selector: 'app-album-card',
