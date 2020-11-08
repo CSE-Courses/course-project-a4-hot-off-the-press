@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Album } from '../models/album';
 
 @Injectable({
   providedIn: 'root'
@@ -7,8 +8,8 @@ export class IndividualProductsService {
 
   constructor() { }
 
-    savedData;
-    set(data) {
+    savedData:Album;
+    set(data:Album) {
       this.savedData = data
       console.log(this.savedData);
     }
