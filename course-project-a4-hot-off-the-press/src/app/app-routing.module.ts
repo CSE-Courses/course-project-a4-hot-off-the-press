@@ -12,7 +12,7 @@ import { UserSettingsComponent } from './components/user-settings/user-settings.
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { CartComponent } from './components/cart/cart.component';
-//import { ProductListComponent } from './components/product-list/product-list.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Routes = [
@@ -23,8 +23,9 @@ const routes: Routes = [
   { path: 'upload', component:UploadComponent },
   { path: 'history', component: OrderHistoryComponent },
   { path: 'cart', component: CartComponent},
-  { path: '', component: LandingPageComponent },
+  { path: 'contact', component: ContactComponent},
   { path: 'details', component: IndividualProductsComponent},
+  { path: '', component: LandingPageComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent

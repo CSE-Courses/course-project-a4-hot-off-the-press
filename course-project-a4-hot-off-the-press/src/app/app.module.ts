@@ -24,7 +24,7 @@ import { PriceAboveZeroDirective } from './components/upload/directives/price-ab
 import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
 import { CartComponent } from './components/cart/cart.component';
 import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
-//import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -48,7 +48,7 @@ import { IndividualProductsComponent } from './components/individual-products/in
     HeaderElemComponent,
     CartComponent,
     IndividualProductsComponent,
-    //IndividualProductsComponent,
+    ContactComponent,
   ],
   imports: [
     AppRoutingModule,
