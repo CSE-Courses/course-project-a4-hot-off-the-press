@@ -1,9 +1,9 @@
 <div class = "login-page">
     <div class = "form">
-        <form (submit) = "loginUser($event)">
-            <input #username type = "text" placeholder = "Username">
-            <input #password type = "password" placeholder = "Password">
-            <input type = "submit" value = "Submit">
+        <form (ngSubmit) = "this.onSubmit(uploadForm)" #uploadForm = "ngForm">
+            <input type = "text" placeholder = "Enter Username" id = Username [(ngModel)]="uploadForm.Username" name = "Username" #Username="ngModel">
+            <input type = "password" placeholder = "Enter Password" id = Password [(ngModel)]="uploadForm.Password" name = "Password" #Password="ngModel">
+            <input [disabled]="!uploadForm.valid" [ngClass]="{'btn-valid':uploadForm.valid, 'btn-invalid':uploadForm.invalid}" type = "submit" value = "Login">
         </form>
         <a routerLink="/create-account">Create New Account</a>
     </div>
