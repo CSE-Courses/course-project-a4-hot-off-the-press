@@ -22,7 +22,7 @@ export class AlbumListComponent implements OnInit {
 
   mapData() {
     return this.albumListService.getAlbums(this.endPoint).then(data => {
-      try { this.albums = data["Items"].map(alb => {
+      this.albums = data["Items"].map(alb => {
         const container = new Album();
         container.title = alb.AlbumTitle;
         container.artist = alb.Artist;
@@ -33,9 +33,7 @@ export class AlbumListComponent implements OnInit {
         container.quality = alb.Quality;
         container.image = alb.Image;
         return container;
-      }); } catch (Error){
-        console.log(Error);
-      }
+      });
     });
   }
 }
