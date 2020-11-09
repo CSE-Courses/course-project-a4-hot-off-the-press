@@ -1,10 +1,10 @@
 .btnGroup {
-    display:flex;
-    height:36px;
-    line-height:36px;
-    font-size:12px;
-    color:#6d6464;
-    font-weight:800;
+  display:flex;
+  height:36px;
+  line-height:36px;
+  font-size:15px;
+  color:#000000;
+  font-weight:800;
   }
   
   .orderHistoryBtn {
@@ -22,8 +22,9 @@
     display:flex;
     padding:20px;
     background:#ffffff;
-    font-size:22px;
+    font-size:27px;
     font-weight:bold;
+    color:#464242;
   }
   
   .tableTitleContainer {
@@ -32,7 +33,7 @@
     line-height:32px;
     padding:0px 20px 0px 20px;
     background:#534b4b;
-    font-size:12px;
+    font-size:15px;
     font-weight:800;
     color:#eee8e5;
   }
@@ -41,7 +42,7 @@
     /* background:blue; */
     background:#534b4b;
     padding:0px 25px 0px 10px;
-    width:57px;
+    width:200px;
   }
   .descriptionTitle {
     flex:1;
@@ -51,7 +52,7 @@
   }
   
   .paymentTitle {
-    /* flex:1; */
+    //* flex:1; */
     width:58px;
     /* background:purple; */
     background:#534b4b;
@@ -63,12 +64,12 @@
     display:flex;
     padding:0px 20px 0px 20px;
     background:#ffffff;
-    font-size:14px;
+    font-size:18px;
   }
   
   .date {
     /* flex:1; */
-    width:57px;
+    width: 200px;
     /* background:lightblue; */
     background:#ffffff;
     padding:15px 25px 15px 10px;
@@ -79,6 +80,7 @@
     flex:1;
     /* background:lightgreen; */
     background:#ffffff;
+    color:#444444;
     padding:15px 25px 15px 10px;
     border-bottom:1px solid #dddddd;
   }
@@ -90,6 +92,8 @@
   
   .type {
     background:#ffffff;
+    color:#444444;
+    
   }
   
   .payment {
@@ -100,6 +104,7 @@
     padding:15px 10px 15px 10px;
     color:#444444;
     border-bottom:1px solid #dddddd;
+    font-weight:bold
   }
   
   .footer {
@@ -119,4 +124,9 @@
     .editBtn {
       cursor:pointer;
       background:#f6f6f6;
+    }
+
+    #subHeader {
+      display: flex;
+      flex-direction: row;
     }

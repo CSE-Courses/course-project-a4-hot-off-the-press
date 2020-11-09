@@ -1,0 +1,27 @@
+<div>
+        <h1>PRODUCT DETAILS</h1>
+        <br><br>
+        <div class="tableListItemsContainer">
+                <div class="image"> 
+                        <img src="{{ album.image }}" width=350 height=350>
+                </div>
+                <div class="product">
+                  <div class="title">{{ album.title }}</div>
+                  <br><br>
+                  <div class="genre">Genre: {{ album.genre }}</div>
+                  <br>
+                  <div class="type">Musician/Band Name: {{album.artist}}</div>
+                  <br>
+                  <div class = "quality">Vinyl Quality: {{ album.quality }}</div>
+                  <br><br>
+                  <div class="payment">$ {{album.price}}</div>
+                  <br><br><br><br>
+
+
+        <button (click)="addtocart()">
+                ADD TO CART
+        </button>
+               
+    
+</div>
+

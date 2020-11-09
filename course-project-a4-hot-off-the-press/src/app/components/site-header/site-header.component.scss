@@ -1,25 +1,17 @@
 #outer {
-    display: table;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
+    border-bottom: 4px solid black;
 }
 
-.header-item-left {
-    float: left;
-    padding: 5px;
-    
+#push {
+    margin-left: auto;
 }
 
-.header-item-right {
-    float: right;
-    padding: 5px;
-}
-
-h2 {
-    color: white;
-    text-emphasis: bold;
-}
-
-a {
-    color: white;
-    text-decoration: underline;
+img {
+    width: 100%;
+    height: auto;
+    max-height: 96px;
 }

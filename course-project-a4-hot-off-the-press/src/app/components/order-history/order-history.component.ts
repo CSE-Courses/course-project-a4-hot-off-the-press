@@ -19,7 +19,12 @@ export class OrderHistoryComponent{
     this.orderHistoryContent = true;
   }
 
-  
+
+  orderHistory(event) {
+
+  }
+
+
 
   addCard() {
 

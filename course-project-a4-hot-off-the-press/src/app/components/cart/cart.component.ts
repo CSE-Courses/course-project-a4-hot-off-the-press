@@ -1,17 +1,35 @@
-import { Component } from "@angular/core";
-import { CartService } from "../../services/cart.service";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-cart",
-  templateUrl: "./cart.component.html",
-  styleUrls: ["./cart.component.css"]
+  selector: 'app-cart',
+  templateUrl: './cart.component.html',
+  styleUrls: ['./cart.component.scss']
 })
-export class CartComponent {
-  items;
+export class CartComponent{
 
-  constructor(private cartService: CartService) {}
+  CartClicked = true;
+  CartContent = true;
+  nextClicked = true;
+  nextContent = true;
+
 
   ngOnInit() {
-    this.items = this.cartService.getItems();
+
   }
+
+  CartBtn() {
+    this.CartClicked = true;
+    this.CartContent = true;
+  }
+
+  nextBtn(){
+    this.nextClicked = true;
+    this.nextContent = true;
+
+  }
+
+  addCard() {
+
+  }
+
 }

@@ -1,16 +1,20 @@
 #album-list {
     height: 312px;
-    margin-bottom: 8px;
+    margin: auto;
+    border-radius: 8px;
 }
 
 h2 {
-    text-align: center;
-    color: rgb(255,255,255);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 4px;
 }
 
 .scrolling-wrapper {
     overflow-x: scroll;
-    overflow-y: hidden;
     white-space: nowrap;
   
     .card {

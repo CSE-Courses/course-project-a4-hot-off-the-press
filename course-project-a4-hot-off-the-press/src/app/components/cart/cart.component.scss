@@ -1,0 +1,132 @@
+.btnGroup {
+    display:flex;
+    height:36px;
+    line-height:36px;
+    font-size:15px;
+    color:#000000;
+    font-weight:800;
+  }
+  
+  .cartBtn {
+    /* flex:1; */
+    padding:0px 10px 0px 10px;
+    background:rgb(92, 90, 90);
+    cursor:pointer;
+  }
+  
+  .cartTitle {
+    background:#fdfdfd;
+  }
+  
+  .container {
+    display:flex;
+    padding:20px;
+    background:#ffffff;
+    font-size:27px;
+    font-weight:bold;
+    color:#464242;
+  }
+  
+  .tableTitleContainer {
+    display:flex;
+    height:32px;
+    line-height:32px;
+    padding:0px 20px 0px 20px;
+    background:#534b4b;
+    font-size:15px;
+    font-weight:800;
+    color:#eee8e5;
+  }
+  .imageTitle {
+    /* flex:1; */
+    /* background:blue; */
+    background:#534b4b;
+    padding:0px 25px 0px 10px;
+    width:200px;
+  }
+  .productTitle {
+    flex:1;
+    /* background:green; */
+    background:#534b4b;
+    padding:0px 25px 0px 10px;
+  }
+  
+  .paymentTitle {
+    /* flex:1; */
+    width:58px;
+    /* background:purple; */
+    background:#534b4b;
+    padding:0px 10px 0px 10px;
+  }
+  
+  
+  .tableListItemsContainer {
+    display:flex;
+    padding:0px 20px 0px 20px;
+    background:#ffffff;
+    font-size:18px;
+  }
+  
+  .image {
+    /* flex:1; */
+    width: 200px;
+    /* background:lightblue; */
+    background:#ffffff;
+    padding:15px 25px 15px 10px;
+    color:#444444;
+    border-bottom:1px solid #dddddd;
+  }
+  .product {
+    flex:1;
+    /* background:lightgreen; */
+    background:#ffffff;
+    color:#444444;
+    padding:15px 25px 15px 10px;
+    border-bottom:1px solid #dddddd;
+  }
+  
+  .title {
+    font-weight:bold;
+    background:#fffefe;
+  }
+  
+  .type {
+    background:#ffffff;
+    color:#444444;
+    
+  }
+  
+  .payment {
+    /* flex:1; */
+    width:58px;
+    /* background:yellow; */
+    background:#ffffff;
+    padding:15px 10px 15px 10px;
+    color:#444444;
+    border-bottom:1px solid #dddddd;
+    font-weight:bold
+  }
+  
+  .footer {
+    padding:0px 20px 40px 20px;
+    background:#ffffff;
+  }
+  
+    .editBtnContainer {
+      /* flex:1; */
+      /* background:orange; */
+      background:#f5f5f5;
+      padding:0px 20px 0px 20px;
+      font-size:12px;
+      font-weight:800;
+    }
+  
+    .editBtn {
+      cursor:pointer;
+      background:#f6f6f6;
+    }
+
+#subHeader {
+      display: flex;
+      flex-direction: row;
+    }

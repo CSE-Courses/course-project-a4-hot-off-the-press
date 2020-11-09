@@ -10,19 +10,30 @@ import { Album } from '../../../models/album'
 export class AlbumListComponent implements OnInit {
   /* listTitle - name of the list, albums - albums to be displayed */
   @Input() listTitle: string;
+  @Input() endPoint: string;
   albums: Album[] = [];
 
   constructor(private albumListService:AlbumListService) { }
 
   ngOnInit(): void {
     //this.showAlbums();
-    this.albums = this.albumListService.getAlbums(this.listTitle);
+    this.mapData();
   }
 
-  //TODO: Have this show JSON data from database server
-  /*
-  showAlbums() {
-    this.albumListService.getAlbums(this.listTitle).subscribe(data => this.albums = JSON.parse(JSON.stringify(data)));
+  mapData() {
+    return this.albumListService.getAlbums(this.endPoint).then(data => {
+      this.albums = data["Items"].map(alb => {
+        const container = new Album();
+        container.title = alb.AlbumTitle;
+        container.artist = alb.Artist;
+        container.date = "";
+        container.genre = alb.Genre;
+        container.price = alb.Price;
+        container.productID = alb.ProductID;
+        container.quality = alb.Quality;
+        container.image = alb.Image;
+        return container;
+      });
+    });
   }
-  */
 }
