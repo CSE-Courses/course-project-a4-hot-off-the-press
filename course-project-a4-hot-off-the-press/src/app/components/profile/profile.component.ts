@@ -29,4 +29,8 @@ export class ProfileComponent implements OnInit {
     });
   }
 
+  changepic() {
+    window.alert('Please choose your desired picture');
+  }
+
 }

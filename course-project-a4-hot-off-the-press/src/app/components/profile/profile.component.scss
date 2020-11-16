@@ -1,0 +1,96 @@
+h1{
+    color: #534b4b;
+    font-size: 30px;
+    font-weight: bolder;
+  
+  
+  }
+
+  .tableListItemsContainer {
+    display:flex;
+    padding:0px 20px 0px 20px;
+    background:#ffffff;
+    font-size:18px;
+  }
+  
+  .image {
+    /* flex:1; */
+    width: 500px;
+    /* background:lightblue; */
+    background:#ffffff;
+    padding:15px 25px 15px 10px;
+    color:#444444;
+    border-bottom:0px solid #dddddd;
+  }
+
+  .button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #534b4b;
+    color: white;
+    border: none;
+  }
+
+
+
+
+  .userinfo {
+    flex:1;
+    /* background:lightgreen; */
+    background:#ffffff;
+    color:#000000;
+    font-size:20px;
+    padding:15px 25px 15px 10px;
+    border-bottom:0px solid #dddddd;
+  }
+  
+  .username {
+    
+    font-size:17px;
+    background:#fffefe;
+    color:#000000;
+  }
+  
+  .firstName {
+   
+    font-size:17px;
+    background:#fffefe;
+    color:#000000;
+    
+  }
+  
+  .lastName {
+   
+    font-size:17px;
+    background:#fffefe;
+    color:#000000;
+    border-bottom: 10px;
+    border-bottom-color:grey;
+    
+  }
+  
+  .email{
+   
+    font-size:17px;
+    background:#fffefe;
+    color:#000000;
+    
+  }
+  
+  
+  
+  .footer {
+    padding:0px 20px 40px 20px;
+    background:#ffffff;
+  }
+  
+  
+  
+  #subHeader {
+      display: flex;
+      flex-direction: row;
+    }
