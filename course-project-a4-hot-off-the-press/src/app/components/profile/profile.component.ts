@@ -9,21 +9,23 @@ import { GetAccountService } from '../../services/get-account.service'
 })
 export class ProfileComponent implements OnInit {
   user:User;
-  endPoint:string;
+  endPoint:string = "test1";
+  image:string = "../../../assets/avi.png"
 
   constructor(private gas:GetAccountService) { }
 
   ngOnInit(): void {
+    this.mapData();
   }
 
   mapData(){
     return this.gas.getUser(this.endPoint).then(data=> {
-      //TODO: Finish this up
-      /*
-      this.user.username = data.username;
-      this.user.email = data.email;
-      this.user.DOB = data.DOB;
-      */
+      const container = new User();
+      container.username = data["Username"];
+      container.email = data["Email"];
+      container.firstName = data["FirstName"];
+      container.lastName = data["LastName"];
+      this.user = container;
     });
   }
 
