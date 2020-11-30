@@ -4,6 +4,13 @@
         <div class="tableListItemsContainer">
                 <div class="image"> 
                         <img src="{{ album.image }}" width=350 height=350>
+                        <br><br>
+                        Location:
+                        <div id="mapContainer">
+                                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="9">
+                                        <agm-circle [latitude]="lat" [longitude]="lng" [radius]="5000" [fillColor]="'rgb(0,0,255)'"></agm-circle>
+                                </agm-map>
+                        </div>
                 </div>
                 <div class="product">
                   <div class="title">{{ album.title }}</div>
@@ -17,11 +24,10 @@
                   <div class="payment">$ {{album.price}}</div>
                   <br><br><br><br>
 
-
         <button (click)="addtocart()">
                 ADD TO CART
         </button>
-               
+        
     
 </div>
 

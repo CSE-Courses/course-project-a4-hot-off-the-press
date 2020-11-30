@@ -17,16 +17,17 @@ import { UserSettingsComponent } from './components/user-settings/user-settings.
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import { UploadComponent } from './components/upload/upload.component';
 
+import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpecCharDirective } from './components/upload/directives/spec-char.directive';
 import { QualitydirDirective } from './components/upload/directives/qualitydir.directive';
 import { PriceAboveZeroDirective } from './components/upload/directives/price-above-zero.directive';
 import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
 import { CartComponent } from './components/cart/cart.component';
-import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
-
+import { AgmCoreModule } from '@agm/core';
+import { AgmDrawingModule } from '@agm/drawing';
 
 @NgModule({
   declarations: [
@@ -48,9 +49,9 @@ import { ProfileComponent } from './components/profile/profile.component';
     PriceAboveZeroDirective,
     HeaderElemComponent,
     CartComponent,
-    IndividualProductsComponent,
     ContactComponent,
     ProfileComponent,
+    IndividualProductsComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -58,6 +59,11 @@ import { ProfileComponent } from './components/profile/profile.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDNTKr2a-OEpxRQ5dWi84W0lS7ydOtCcxc',
+      libraries: ['drawing']
+    }),
+    AgmDrawingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

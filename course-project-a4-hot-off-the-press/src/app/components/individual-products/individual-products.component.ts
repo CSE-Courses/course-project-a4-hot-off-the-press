@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IndividualProductsService } from '../../../app/services/individual-products.service'
-import { Album } from '../../../app/models/album'
+import { Album } from '../../../app/models/album';
+import { map } from 'rxjs/operators';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-individual-products',
@@ -9,6 +11,8 @@ import { Album } from '../../../app/models/album'
 })
 export class IndividualProductsComponent implements OnInit {
   album: Album;
+  lat: number = 42.8864;
+  lng: number = -78.8784;
 
   addtocart() {
     window.alert('This product has been added to your cart!');
@@ -20,6 +24,5 @@ export class IndividualProductsComponent implements OnInit {
     this.album = this.ips.get(); 
   }
 
-
-
+  initMap(){}
 }
