@@ -28,8 +28,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'details', component: IndividualProductsComponent},
   { path: 'profile', component: ProfileComponent },
-  { path: '', component: LandingPageComponent },
   { path: 'review', component: ReviewRatingComponent },
+  { path: '', component: LandingPageComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent
