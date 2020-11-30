@@ -25,6 +25,7 @@ import { HeaderElemComponent } from './components/site-header/header-elem/header
 import { CartComponent } from './components/cart/cart.component';
 import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ContactComponent } from './components/contact/contact.component';
     CartComponent,
     IndividualProductsComponent,
     ContactComponent,
+    ProfilePageComponent,
   ],
   imports: [
     AppRoutingModule,

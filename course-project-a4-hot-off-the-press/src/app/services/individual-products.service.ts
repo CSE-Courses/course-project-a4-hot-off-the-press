@@ -10,7 +10,7 @@ export class IndividualProductsService {
   }
   static set(arg0: import("../models/album").Album) {
     throw new Error("Method not implemented.");
-  }
+  } 
 
   constructor() { }
 
