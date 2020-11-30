@@ -26,6 +26,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     IndividualProductsComponent,
     ContactComponent,
     ProfileComponent,
+    ReviewRatingComponent,
   ],
   imports: [
     AppRoutingModule,

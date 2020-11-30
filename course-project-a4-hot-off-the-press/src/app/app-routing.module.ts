@@ -14,6 +14,7 @@ import { UploadComponent } from './components/upload/upload.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'details', component: IndividualProductsComponent},
   { path: 'profile', component: ProfileComponent },
   { path: '', component: LandingPageComponent },
+  { path: 'review', component: ReviewRatingComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent
