@@ -28,6 +28,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDrawingModule } from '@agm/drawing';
+import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { AgmDrawingModule } from '@agm/drawing';
     ContactComponent,
     ProfileComponent,
     IndividualProductsComponent,
+    ReviewRatingComponent,
   ],
   imports: [
     AppRoutingModule,
