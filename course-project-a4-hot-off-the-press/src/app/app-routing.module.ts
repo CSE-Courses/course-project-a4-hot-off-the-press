@@ -22,7 +22,6 @@ const routes: Routes = [
   { path: 'upload', component:UploadComponent },
   { path: 'create-account', component: UserCreationComponent},
   { path: 'user-settings', component: UserSettingsComponent},
-  { path: 'upload', component:UploadComponent },
   { path: 'history', component: OrderHistoryComponent },
   { path: 'cart', component: CartComponent},
   { path: 'contact', component: ContactComponent},

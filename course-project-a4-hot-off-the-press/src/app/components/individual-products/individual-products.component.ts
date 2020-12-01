@@ -11,8 +11,6 @@ import { AgmCoreModule } from '@agm/core';
 })
 export class IndividualProductsComponent implements OnInit {
   album: Album;
-  lat: number = 42.8864;
-  lng: number = -78.8784;
 
   addtocart() {
     window.alert('This product has been added to your cart!');
@@ -21,7 +19,7 @@ export class IndividualProductsComponent implements OnInit {
   constructor(private ips:IndividualProductsService) { }
 
   ngOnInit(): void {
-    this.album = this.ips.get(); 
+    this.album = this.ips.get();
   }
 
   initMap(){}

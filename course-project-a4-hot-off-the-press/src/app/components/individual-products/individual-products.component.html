@@ -7,8 +7,8 @@
                         <br><br>
                         Location:
                         <div id="mapContainer">
-                                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="9">
-                                        <agm-circle [latitude]="lat" [longitude]="lng" [radius]="5000" [fillColor]="'rgb(0,0,255)'"></agm-circle>
+                                <agm-map [latitude]="this.album.lat" [longitude]="this.album.lng" [zoom]="7">
+                                        <agm-circle [latitude]="this.album.lat" [longitude]="this.album.lng" [radius]="20000" [fillColor]="'rgb(0,0,255)'"></agm-circle>
                                 </agm-map>
                         </div>
                 </div>
