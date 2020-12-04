@@ -25,25 +25,44 @@
   <div class="paymentTitle">PRICE</div>
 </div>
 
-<div class="tableListItemsContainer" *ngFor="let album of albums">
+<div class="tableListItemsContainer">
   <div class="image"> 
-    <img src="{{ album.image }}" width=200 height=200>
+          <img src="../../../../assets/image1.png" alt="yellowsubmarine" width="200" height="200">
   </div>
   <div class="product">
-    <div class="title">{{ album.title }}</div>
-    <br><br>
-    <br>
-    <div class="type">Musician/Band Name: {{album.artist}}</div>
-    <br>
-   <div class = "quality">Vinyl Quality: {{ album.quality }}</div>
+    <div class="title">Yellow Submarine</div>
+    <div class="type">The Beatles - 1968</div>
   </div>
-  <div class="payment">$ {{album.price}}</div>
+  <div class="payment">$16.99</div>
 </div>
 
-   
+<div class="tableListItemsContainer">
+    <div class="image"> 
+        <img src="../../../../assets/image2.jpg" alt="pinkfloyd" width="200" height="200">
+    </div>
+    <div class="product">
+      <div class="title">The Dark Side of the Moon</div>
+      <div class="type">Pink Floyd - 1973</div>
+    </div>
+    <div class="payment">$25.90</div>
 </div>
 
 
+<div class ="tableListItemsContainer">
+<div class="image"> 
+    <img src="../../../../assets/image3.jpg" alt="sidepony" width="200" height="200">
+</div>
+<div class="product">
+  <div class="title">Side Pony</div>
+  <div class="type">Lake Street Dive - 2016</div>
+</div>
+<div class="payment">$20.99</div>
+</div>
+
+<div class = "tableListItemsContainer">
+<div class="image">TOTAL:</div>
+<div class= "payment">$63.88</div>
+</div>
 
 
 

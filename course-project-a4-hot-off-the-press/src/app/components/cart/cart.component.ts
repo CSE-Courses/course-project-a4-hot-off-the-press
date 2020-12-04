@@ -1,26 +1,21 @@
-import { Component,OnInit } from '@angular/core';
-import { IndividualProductsService } from '../../../app/services/individual-products.service'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
 })
-export class CartComponent implements OnInit {
-  albums;
-
-  constructor(
-    private ips: IndividualProductsService // not sure
-    ) { }
-
-  ngOnInit() {
-    this.albums = this.ips.getItems();
-  }
+export class CartComponent{
 
   CartClicked = true;
   CartContent = true;
   nextClicked = true;
   nextContent = true;
+
+
+  ngOnInit() {
+
+  }
 
   CartBtn() {
     this.CartClicked = true;
@@ -30,6 +25,10 @@ export class CartComponent implements OnInit {
   nextBtn(){
     this.nextClicked = true;
     this.nextContent = true;
+
+  }
+
+  addCard() {
 
   }
 
