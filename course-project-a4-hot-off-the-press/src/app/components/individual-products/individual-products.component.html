@@ -2,7 +2,7 @@
         <h1>PRODUCT DETAILS</h1>
         <br><br>
         <div class="tableListItemsContainer">
-                <div class="image"> 
+                <div class="image">
                         <img src="{{ album.image }}" width=350 height=350>
                         <br><br>
                         Location:
@@ -24,13 +24,13 @@
                   <div class="payment">$ {{album.price}}</div>
                   <br><br><br><br>
 
-        <button (click)="addtocart()">
+
+        <button (click)="addtocart(album)">
                 ADD TO CART
         </button>
         <h2>
                 <div routerLink="/review"><u>Write a Customer Review</u></div>
         </h2>
-        
-    
-</div>
 
+
+</div>

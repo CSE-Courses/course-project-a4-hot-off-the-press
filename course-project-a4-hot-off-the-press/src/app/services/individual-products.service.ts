@@ -14,6 +14,21 @@ export class IndividualProductsService {
 
   constructor() { }
 
+  albums = [];
+
+  addtocart(product) {
+    this.albums.push(product);
+  }
+
+  getItems() {
+    return this.albums;
+  }
+
+  clearCart() {
+    this.albums = [];
+    return this.albums;
+  }
+
     savedData:Album;
     set(data:Album) {
       this.savedData = data
