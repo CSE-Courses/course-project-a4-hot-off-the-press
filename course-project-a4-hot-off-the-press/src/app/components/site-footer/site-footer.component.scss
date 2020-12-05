@@ -1,8 +1,38 @@
 #outer {
+    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     border-top: 4px solid black;
     margin-top: 20px;
+}
+
+ul {
+    margin: 20px;
+    margin-left: 0px;
+    list-style-type: circle;
+}
+
+u {
+    font-size: 20px;
+}
+
+a:visited {
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(83, 224, 90);
+    text-decoration: underline;
+}
+
+.push{
+    margin-left: auto;
 }
