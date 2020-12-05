@@ -15,6 +15,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+import { ShippingComponent } from './components/shipping/shipping.component';
+
 
 
 const routes: Routes = [
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'review', component: ReviewRatingComponent },
   { path: '', component: LandingPageComponent },
+  { path: 'shipping', component: ShippingComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent

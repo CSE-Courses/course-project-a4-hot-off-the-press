@@ -31,6 +31,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDrawingModule } from '@agm/drawing';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+import { ShippingComponent } from './components/shipping/shipping.component';
+
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { ReviewRatingComponent } from './components/review-rating/review-rating.
     LandingPageComponent,
     SiteHeaderComponent,
     LoginComponent,
+    ShippingComponent,
 
     //AdminComponent,
     //ProductListComponent,

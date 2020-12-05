@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Album } from '../models/album';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class IndividualProductsService {
     throw new Error("Method not implemented.");
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   albums = [];
 
@@ -38,7 +39,10 @@ export class IndividualProductsService {
      // console.log(this.savedData);
       return this.savedData;
     }
-
+    
+    getShippingPrices() {
+      return this.http.get('/assets/shipping.json');
+    }
 
 
 }
