@@ -1,0 +1,24 @@
+<div class="primary">
+        <h1>USER PROFILE</h1>
+        <br><br>
+        <div class="tableListItemsContainer">
+                <div class="userinfo">
+                    <div class="image"> 
+                            <img src="{{ this.image }}">
+                    </div>
+                  <br>
+                    <button (click)="changepic()">
+                        CHANGE PROFILE PHOTO
+                    </button>
+                    <br><br><br><br>
+
+                  <div class="username">USERNAME: {{this.user.username}}</div>
+                  <br>
+                  <div class="firstName">FIRST NAME: {{this.user.firstName}}</div>
+                 <br>
+                  <div class="lastName">LAST NAME: {{this.user.lastName}}</div>
+           <br>
+                  <div class = "email">EMAIL: {{this.user.email}}</div>
+
+    
+</div>

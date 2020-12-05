@@ -25,7 +25,12 @@ import { HeaderElemComponent } from './components/site-header/header-elem/header
 import { CartComponent } from './components/cart/cart.component';
 import { IndividualProductsComponent } from './components/individual-products/individual-products.component';
 import { ContactComponent } from './components/contact/contact.component';
+<<<<<<< HEAD
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+=======
+import { ProfileComponent } from './components/profile/profile.component';
+import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+>>>>>>> 351588e522e5b000e95a23b36bbda60571c9b8cd
 
 
 @NgModule({
@@ -50,7 +55,12 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     CartComponent,
     IndividualProductsComponent,
     ContactComponent,
+<<<<<<< HEAD
     ProfilePageComponent,
+=======
+    ProfileComponent,
+    ReviewRatingComponent,
+>>>>>>> 351588e522e5b000e95a23b36bbda60571c9b8cd
   ],
   imports: [
     AppRoutingModule,
