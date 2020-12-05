@@ -31,6 +31,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDrawingModule } from '@agm/drawing';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { ReviewRatingComponent } from './components/review-rating/review-rating.
     ProfileComponent,
     IndividualProductsComponent,
     ReviewRatingComponent,
+    SiteFooterComponent,
   ],
   imports: [
     AppRoutingModule,
