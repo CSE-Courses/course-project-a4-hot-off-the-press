@@ -1,13 +1,13 @@
 #outer {
     padding: 1px;
     display: inline-block;
-    height: 65%;
+    height: 100%;
     width: 138px;
 }
 
 #inner {
-    border-style: solid;
-    border-width: 1px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     padding: 4px;
 }
 
