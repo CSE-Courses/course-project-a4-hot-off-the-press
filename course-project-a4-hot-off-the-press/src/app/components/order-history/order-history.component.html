@@ -1,15 +1,8 @@
-<div id="subHeader">
-  <div class="btnGroup">
-    <div class="orderHistoryBtn" 
-         (click)="orderHistoryBtn()"
-         [ngStyle]="{'background': orderHistoryClicked ? '#ffffff' : 'transparent',
-                     'color' : orderHistoryClicked ? '#000000' : '#999999',
-                     'borderTop' : orderHistoryClicked ?  '4px solid #fa7272':'0px solid transparent' }">
-         <div routerLink="/cart">Cart</div>
-    </div>
+<div class="primary" id="outer">
+  <div id="subHeader">
+    <a class="SHunselected" routerLink="/cart">Cart</a>
+    <a class="SHselected" routerLink="/history">Past Orders</a>
   </div>
-  <div class="btnGroup">Past Orders</div>
-</div>
 
 <!-- Order History (STARTS) --> 
 <div *ngIf="orderHistoryContent">

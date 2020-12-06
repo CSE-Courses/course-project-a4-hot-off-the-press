@@ -33,6 +33,8 @@ import { AgmDrawingModule } from '@agm/drawing';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { AboutComponent } from './components/about/about.component';
+import { ShippingComponent } from './components/shipping/shipping.component';
+
 
 
 @NgModule({
@@ -43,6 +45,7 @@ import { AboutComponent } from './components/about/about.component';
     LandingPageComponent,
     SiteHeaderComponent,
     LoginComponent,
+    ShippingComponent,
 
     //AdminComponent,
     //ProductListComponent,
