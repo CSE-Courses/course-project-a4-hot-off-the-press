@@ -12,9 +12,27 @@ import { AgmCoreModule } from '@agm/core';
 export class IndividualProductsComponent implements OnInit {
   album: Album;
 
+  public show:boolean = false;
+  public buttonName:any = 'Show';
+
   addtocart() {
     window.alert('This product has been added to your cart!');
   }
+  
+  submit() {
+    window.alert('Thank you for reviewing this product!');
+  }
+
+  toggle() {
+    this.show = !this.show;
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Show";
+  }
+  
 
   constructor(private ips:IndividualProductsService) { }
 

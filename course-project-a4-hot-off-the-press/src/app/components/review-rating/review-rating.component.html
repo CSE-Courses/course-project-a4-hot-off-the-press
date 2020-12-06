@@ -3,8 +3,11 @@
             PRODUCT REVIEW    
         </h1>
 <div class="container">
+    
     <div class="feedback">
+      <br>
       <div class="rating">
+        <br>
         <input type="radio" name="rating" id="rating-5">
         <label for="rating-5"></label>
         <input type="radio" name="rating" id="rating-4">
@@ -105,18 +108,26 @@
       </div>
     </div>
   </div>
-  <h2>
-    REVIEW THIS PRODUCT
+  <h3>NAME: 
+      <br>
+      <input type="text" id="name">
+      </h3>
+     
+  <h3>
+    <br>
+    REVIEW THIS PRODUCT:
     <br>
     <input type="text" id="review">
 
-  </h2>
+  </h3>
   
         <div routerLink="/details">
             <button (click)="submit()">
                     SUBMIT
                 </button>
         </div>
+
+      
 
 
 

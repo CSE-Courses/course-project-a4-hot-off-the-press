@@ -9,9 +9,9 @@ export class ReviewRatingComponent implements OnInit {
 
   constructor() { }
 
-  submit() {
-    window.alert('Thank you for reviewing this product!');
-  }
+  //submit() {
+    //window.alert('Thank you for reviewing this product!');
+ // }
 
   ngOnInit(): void {
   }
