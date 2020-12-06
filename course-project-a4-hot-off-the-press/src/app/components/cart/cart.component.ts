@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import { IndividualProductsService } from '../../../app/services/individual-products.service'
+import { IndividualProductsService } from '../../../app/services/individual-products.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -8,10 +9,17 @@ import { IndividualProductsService } from '../../../app/services/individual-prod
 })
 export class CartComponent implements OnInit {
   albums;
+  checkoutForm;
 
   constructor(
-    private ips: IndividualProductsService // not sure
-    ) { }
+    private ips: IndividualProductsService, // not sure
+    private formBuilder: FormBuilder,
+    ) { 
+      this.checkoutForm = this.formBuilder.group({
+        username: '',
+        address: ''
+      });
+    }
 
   ngOnInit() {
     this.albums = this.ips.getItems();
@@ -30,7 +38,15 @@ export class CartComponent implements OnInit {
   nextBtn(){
     this.nextClicked = true;
     this.nextContent = true;
+  }
 
+  onSubmit(customerData) {
+    // Process checkout data here
+    this.albums = this.ips.clearCart();
+    this.checkoutForm.reset();
+
+    console.warn('Your order has been submitted', customerData);
+    window.alert('Your order has been submitted!');
   }
 
 }
