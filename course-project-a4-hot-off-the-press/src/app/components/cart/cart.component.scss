@@ -1,3 +1,6 @@
+#dab {
+  margin: 20px;
+}
 .btnGroup {
     display:flex;
     height:36px;
@@ -141,5 +144,6 @@
     }
 
     #outer {
-      border: 4px solid black;
+      margin: auto;
+      width: 75%;
     }

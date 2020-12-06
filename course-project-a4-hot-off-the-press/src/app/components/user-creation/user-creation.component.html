@@ -1,5 +1,5 @@
 <div class = "create-account-page">
-    <div class = "form">
+    <div id="form" class="primary">
         <form (ngSubmit) = "this.onSubmit(uploadForm)" #uploadForm = "ngForm">
             <input type = "text" placeholder = "Enter new username" id = "Username" [(ngModel)]="uploadForm.Username" name = "Username" #Username="ngModel">
             <input type = "password" placeholder = "Enter new password" id = "Password" [(ngModel)]="uploadForm.Password" name = "Password" #Password="ngModel">
