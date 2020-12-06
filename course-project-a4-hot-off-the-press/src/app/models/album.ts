@@ -9,4 +9,6 @@ export class Album {
     username:string;
     date:string;
     productID:string;
+    lat:number;
+    lng:number;
 }

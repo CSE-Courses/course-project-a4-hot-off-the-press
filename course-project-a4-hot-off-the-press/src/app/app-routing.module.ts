@@ -15,6 +15,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+import { ShippingComponent } from './components/shipping/shipping.component';
+
 
 
 const routes: Routes = [
@@ -22,14 +24,14 @@ const routes: Routes = [
   { path: 'upload', component:UploadComponent },
   { path: 'create-account', component: UserCreationComponent},
   { path: 'user-settings', component: UserSettingsComponent},
-  { path: 'upload', component:UploadComponent },
   { path: 'history', component: OrderHistoryComponent },
   { path: 'cart', component: CartComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'details', component: IndividualProductsComponent},
   { path: 'profile', component: ProfileComponent },
-  { path: '', component: LandingPageComponent },
   { path: 'review', component: ReviewRatingComponent },
+  { path: '', component: LandingPageComponent },
+  { path: 'shipping', component: ShippingComponent },
   // {
   //   path: 'admin',
   //   component: AdminComponent

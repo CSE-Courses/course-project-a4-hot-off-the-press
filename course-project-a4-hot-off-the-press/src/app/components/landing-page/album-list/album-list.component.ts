@@ -32,6 +32,8 @@ export class AlbumListComponent implements OnInit {
         container.productID = alb.ProductID;
         container.quality = alb.Quality;
         container.image = alb.Image;
+        container.lat = alb.Lat;
+        container.lng = alb.Lng;
         return container;
       });
     });

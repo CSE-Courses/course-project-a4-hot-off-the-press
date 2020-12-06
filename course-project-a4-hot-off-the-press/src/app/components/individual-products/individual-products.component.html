@@ -2,12 +2,15 @@
         <h1>PRODUCT DETAILS</h1>
         <br><br>
         <div class="tableListItemsContainer">
-                <div class="image"> 
+                <div class="image">
                         <img src="{{ album.image }}" width=350 height=350>
                         <br><br>
-                        <h2>
-                                <div routerLink="/review"><u>Write a Customer Review</u></div>
-                        </h2>
+                        Location:
+                        <div id="mapContainer">
+                                <agm-map [latitude]="this.album.lat" [longitude]="this.album.lng" [zoom]="7">
+                                        <agm-circle [latitude]="this.album.lat" [longitude]="this.album.lng" [radius]="20000" [fillColor]="'rgb(0,0,255)'"></agm-circle>
+                                </agm-map>
+                        </div>
                 </div>
                 <div class="product">
                   <div class="title">{{ album.title }}</div>
@@ -22,10 +25,12 @@
                   <br><br><br><br>
 
 
-        <button (click)="addtocart()">
+        <button (click)="addtocart(album)">
                 ADD TO CART
         </button>
-               
-    
-</div>
+        <h2>
+                <div routerLink="/review"><u>Write a Customer Review</u></div>
+        </h2>
 
+
+</div>
