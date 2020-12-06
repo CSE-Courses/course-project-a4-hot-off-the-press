@@ -27,24 +27,15 @@ import { PriceAboveZeroDirective } from './components/upload/directives/price-ab
 import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
-<<<<<<< HEAD
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-=======
 import { ProfileComponent } from './components/profile/profile.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDrawingModule } from '@agm/drawing';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 351588e522e5b000e95a23b36bbda60571c9b8cd
-=======
-=======
 import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { AboutComponent } from './components/about/about.component';
->>>>>>> a71b22912f0a752e8e63d7954d445ea22bcab037
 import { ShippingComponent } from './components/shipping/shipping.component';
 
->>>>>>> a2353fbf025580cc57848cff4e1dbadc8bc46ebe
 
 
 @NgModule({
@@ -69,18 +60,12 @@ import { ShippingComponent } from './components/shipping/shipping.component';
     HeaderElemComponent,
     CartComponent,
     ContactComponent,
-<<<<<<< HEAD
     ProfilePageComponent,
-=======
     ProfileComponent,
     IndividualProductsComponent,
     ReviewRatingComponent,
-<<<<<<< HEAD
->>>>>>> 351588e522e5b000e95a23b36bbda60571c9b8cd
-=======
     SiteFooterComponent,
     AboutComponent,
->>>>>>> a71b22912f0a752e8e63d7954d445ea22bcab037
   ],
   imports: [
     AppRoutingModule,
