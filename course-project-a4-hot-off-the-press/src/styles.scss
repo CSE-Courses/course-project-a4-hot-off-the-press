@@ -7,6 +7,7 @@ html {
 .primary {
     background: #ffffff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border: 4px solid black;
 }
 
 .secondary {
@@ -14,5 +15,15 @@ html {
 }
 
 .tertiary {
+    background: rgb(255, 255, 255);
+}
+
+.SHselected {
+    border-top: 4px solid #fa7272;
+    background: rgb(230, 230, 230);
+}
+
+.SHunselected {
+    border-top: 4px solid #FFFFFF;
     background: rgb(255, 255, 255);
 }

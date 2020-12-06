@@ -15,6 +15,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReviewRatingComponent } from './components/review-rating/review-rating.component';
+import { AboutComponent } from './components/about/about.component'
 import { ShippingComponent } from './components/shipping/shipping.component';
 
 
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'details', component: IndividualProductsComponent},
   { path: 'profile', component: ProfileComponent },
   { path: 'review', component: ReviewRatingComponent },
+  { path: 'about', component: AboutComponent },
   { path: '', component: LandingPageComponent },
   { path: 'shipping', component: ShippingComponent },
   // {

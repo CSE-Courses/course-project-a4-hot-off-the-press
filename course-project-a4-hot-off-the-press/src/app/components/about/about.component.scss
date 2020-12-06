@@ -1,0 +1,22 @@
+#outer {
+    border: 4px solid black;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid gray;
+}
+
+img {
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}

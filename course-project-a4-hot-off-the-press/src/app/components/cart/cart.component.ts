@@ -1,6 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { IndividualProductsService } from '../../../app/services/individual-products.service';
 import { FormBuilder } from '@angular/forms';
+import { PurchaseNotificationService } from '../../services/emailNotifications/purchase-notification.service';
 
 @Component({
   selector: 'app-cart',
@@ -13,6 +14,7 @@ export class CartComponent implements OnInit {
 
   constructor(
     private ips: IndividualProductsService, // not sure
+    private notificationService: PurchaseNotificationService,
     private formBuilder: FormBuilder,
     ) { 
       this.checkoutForm = this.formBuilder.group({
@@ -42,6 +44,8 @@ export class CartComponent implements OnInit {
 
   onSubmit(customerData) {
     // Process checkout data here
+    //this.notificationService.sendNotification(customerData)
+
     this.albums = this.ips.clearCart();
     this.checkoutForm.reset();
 

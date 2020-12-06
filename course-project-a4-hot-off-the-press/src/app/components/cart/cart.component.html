@@ -1,72 +1,64 @@
-<div id="subHeader">
-  <div class="btnGroup">Cart</div>
-  <div class="btnGroup">
-    <div class="CartBtn" 
-         (click)="CartBtn()"
-         [ngStyle]="{'background': CartClicked ? '#ffffff' : 'transparent',
-                     'color' : CartClicked ? '#000000' : '#999999',
-                     'borderTop' : CartClicked ? '4px solid #fa7272' : '0px solid transparent'}"
-         ><div routerLink="/history">Past Orders</div></div>
+<div class="primary" id="outer">
+  <div id="subHeader">
+    <a class="SHselected" routerLink="/cart">Cart</a>
+    <a class="SHunselected" routerLink="/history">Past Orders</a>
+  </div>
   
+  
+  
+  <!-- Order History (STARTS) --> 
+  <div *ngIf="CartContent">
+  <div class="container">
+    <div class="CartTitle">SHOPPING CART</div>
   </div>
+  
+  <div class="tableTitleContainer">
+    <div class="imageTitle">PRODUCT</div>
+    <div class="productTitle"></div>
+    <div class="paymentTitle">PRICE</div>
+  </div>
+  
+  <div class="tableListItemsContainer" *ngFor="let album of albums">
+    <div class="image"> 
+      <img src="{{ album.image }}" width=200 height=200>
+    </div>
+    <div class="product">
+      <div class="title">{{ album.title }}</div>
+      <br><br>
+      <br>
+      <div class="type">Musician/Band Name: {{album.artist}}</div>
+      <br>
+     <div class = "quality">Vinyl Quality: {{ album.quality }}</div>
+    </div>
+    <div class="payment">$ {{album.price}}</div>
+  </div>
+  
+     
+  </div>
+<div id="dab">
+  <p>
+    <a routerLink="/shipping">Shipping Prices</a>
+  </p>
+  
+  <form [formGroup]="checkoutForm"(ngSubmit)="onSubmit(checkoutForm.value)">
+    <div>
+      <label for="name">
+        Username
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+  
+    <div>
+      <label for="address">
+        Address
+      </label>
+      <input id="address" type="text" formControlName="address">
+    </div>
+  
+    <button class="button" type="submit">Checkout</button>
+  
+  </form>
 </div>
 
 
-
-<!-- Order History (STARTS) --> 
-<div *ngIf="CartContent">
-<div class="container">
-  <div class="CartTitle">SHOPPING CART</div>
 </div>
-
-<div class="tableTitleContainer">
-  <div class="imageTitle">PRODUCT</div>
-  <div class="productTitle"></div>
-  <div class="paymentTitle">PRICE</div>
-</div>
-
-<div class="tableListItemsContainer" *ngFor="let album of albums">
-  <div class="image"> 
-    <img src="{{ album.image }}" width=200 height=200>
-  </div>
-  <div class="product">
-    <div class="title">{{ album.title }}</div>
-    <br><br>
-    <br>
-    <div class="type">Musician/Band Name: {{album.artist}}</div>
-    <br>
-   <div class = "quality">Vinyl Quality: {{ album.quality }}</div>
-  </div>
-  <div class="payment">$ {{album.price}}</div>
-</div>
-
-   
-</div>
-
-
-<p>
-  <a routerLink="/shipping">Shipping Prices</a>
-</p>
-
-<form [formGroup]="checkoutForm"(ngSubmit)="onSubmit(checkoutForm.value)">
-
-  <div>
-    <label for="name">
-      Username
-    </label>
-    <input id="name" type="text" formControlName="name">
-  </div>
-
-  <div>
-    <label for="address">
-      Address
-    </label>
-    <input id="address" type="text" formControlName="address">
-  </div>
-
-  <button class="button" type="submit">Checkout</button>
-
-</form>
-
-
-<div class="footer"></div>
