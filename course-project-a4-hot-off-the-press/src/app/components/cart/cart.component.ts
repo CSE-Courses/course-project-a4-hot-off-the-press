@@ -31,6 +31,7 @@ export class CartComponent implements OnInit {
   nextClicked = true;
   nextContent = true;
 
+
   CartBtn() {
     this.CartClicked = true;
     this.CartContent = true;
@@ -48,6 +49,10 @@ export class CartComponent implements OnInit {
 
     console.warn('Your order has been submitted', customerData);
     window.alert('Your order has been submitted!');
+  }
+
+  addCard() {
+
   }
 
 }

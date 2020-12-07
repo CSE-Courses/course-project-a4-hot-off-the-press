@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IndividualProductsService } from '../../../app/services/individual-products.service'
 import { Album } from '../../../app/models/album';
 import { map } from 'rxjs/operators';
@@ -11,18 +11,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./individual-products.component.scss']
 })
 export class IndividualProductsComponent implements OnInit {
-  album;
+  album: Album;
 
+  addtocart() {
+    window.alert('This product has been added to your cart!');
+  }
 
-  constructor(
-    private route: ActivatedRoute, // Not sure!!!
-    private ips:IndividualProductsService
-    ) { }
-
-    addtocart(album) {
-      this.ips.addtocart(album);
-      window.alert('This product has been added to your cart!');
-    }
+  constructor(private ips:IndividualProductsService) { }
 
   ngOnInit(): void {
     this.album = this.ips.get();
