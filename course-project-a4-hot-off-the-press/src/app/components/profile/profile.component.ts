@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
-import { GetAccountService } from '../../services/get-account.service'
+import { GetAccountService } from '../../services/get-account.service';
+//import { GetLoginService } from '../../services/get-login.service';
+import { LoginComponent } from '../login/login.component'
 
 @Component({
   selector: 'app-profile',
@@ -12,14 +14,14 @@ export class ProfileComponent implements OnInit {
   endPoint:string = "test1";
   image:string = "../../../assets/avi.png"
 
-  constructor(private gas:GetAccountService) { }
+  constructor(private gas:GetAccountService, private username: LoginComponent) { }
 
   ngOnInit(): void {
     this.mapData();
   }
 
   mapData(){
-    return this.gas.getUser(this.endPoint).then(data=> {
+    return this.gas.getUser(this.username.getUsername()).then(data=> {
       const container = new User();
       container.username = data["Username"];
       container.email = data["Email"];
@@ -29,6 +31,7 @@ export class ProfileComponent implements OnInit {
     });
   }
 
+  
   changepic() {
     window.alert('Please choose your desired picture');
   }

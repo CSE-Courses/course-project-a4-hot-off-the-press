@@ -25,6 +25,7 @@ import { PriceAboveZeroDirective } from './components/upload/directives/price-ab
 import { HeaderElemComponent } from './components/site-header/header-elem/header-elem.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDrawingModule } from '@agm/drawing';
@@ -57,6 +58,7 @@ import { ShippingComponent } from './components/shipping/shipping.component';
     HeaderElemComponent,
     CartComponent,
     ContactComponent,
+    ProfilePageComponent,
     ProfileComponent,
     IndividualProductsComponent,
     ReviewRatingComponent,

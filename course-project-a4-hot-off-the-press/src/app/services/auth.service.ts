@@ -18,7 +18,7 @@ export class AuthService {
       'x-api-key': '3IoVrnoyYf3Ttlft13Eim1r2iBQ9Cf1H8xHlbeZA'
     })
   }
-
+  
   constructor(private http: HttpClient) { }
   //contact data base in this service
 
