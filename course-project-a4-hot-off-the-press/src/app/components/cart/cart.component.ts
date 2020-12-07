@@ -45,8 +45,8 @@ export class CartComponent implements OnInit {
 
   onSubmit(customerData) {
     // Process checkout data here
-    //this.notificationService.sendNotification(customerData)
-
+    this.notificationService.sendNotification(customerData.Username, customerData.Email, customerData.albums);
+    
     this.albums = this.ips.clearCart();
     this.checkoutForm.reset();
 

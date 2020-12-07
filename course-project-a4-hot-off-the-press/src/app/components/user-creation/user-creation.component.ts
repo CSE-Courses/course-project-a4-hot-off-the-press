@@ -16,7 +16,9 @@ export class UserCreationComponent implements OnInit {
   }
 
   onSubmit(uploadForm: NgForm) {
-    this.Post.sendUserInfo(uploadForm)
+    this.Post.sendUserInfo(uploadForm.value)
+    console.warn("Succesfully created account: ")
+    window.alert("Security Code: " + Math.floor(Math.random() * Math.floor(23145)))
     this.route.navigate(['/'])
   }
 
