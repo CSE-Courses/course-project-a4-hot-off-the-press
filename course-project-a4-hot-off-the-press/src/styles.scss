@@ -1,6 +1,6 @@
 // You can add global styles to this file, and also import other style files 
 html {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     font-family: "Roboto", sans-serif;
 }
 
@@ -24,6 +24,22 @@ html {
 }
 
 .SHunselected {
-    border-top: 4px solid #FFFFFF;
+    border-top: 4px solid rgb(255, 255, 255);
     background: rgb(255, 255, 255);
+}
+
+.SHunselected:hover {
+    border-top: 4px solid rgb(200, 200, 200);
+    background: rgb(230, 230, 230);
+}
+
+
+a {
+	text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+
+a:hover {
+    color: rgb(224, 83, 83);	
+    text-decoration: underline;
 }

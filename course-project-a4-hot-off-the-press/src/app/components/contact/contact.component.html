@@ -1,4 +1,4 @@
-<div class="primary" style="width: 75%; margin: auto; padding: 20px;">
+<div class="primary" style="width: 360px; margin: auto; text-align: center; padding: 20px;">
   <section class="hero is-primary is-bold">
     <div class="hero-body">
     <div class="container">  
@@ -20,7 +20,8 @@
             [(ngModel)]="name"
             required
             minlength="3"
-            #nameInput="ngModel">
+            #nameInput="ngModel" 
+            style="width:100%; margin-bottom: 2px;">
           <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
             Name is required and needs to be at least 3 characters long.
           </div>
@@ -35,7 +36,8 @@
             [(ngModel)]="email"
             required
             email
-            #emailInput="ngModel">
+            #emailInput="ngModel" 
+            style="width:100%; margin-bottom: 1px;">
           <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
             Needs to be a valid email.
           </div>
@@ -48,7 +50,8 @@
             placeholder="What do you want to tell us?" 
             [(ngModel)]="message"
             required
-            #messageInput="ngModel"></textarea>
+            #messageInput="ngModel" 
+            style="width:100%;"></textarea>
             <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
               Your message is required!
             </div>
