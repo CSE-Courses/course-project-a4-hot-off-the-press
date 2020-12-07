@@ -13,7 +13,8 @@ import { ActivatedRoute } from '@angular/router';
 export class IndividualProductsComponent implements OnInit {
   album: Album;
 
-  addtocart() {
+  addtocart(album) {
+    this.ips.addtocart(album);
     window.alert('This product has been added to your cart!');
   }
 
